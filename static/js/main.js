@@ -168,10 +168,10 @@ const tab_1_signInBtn = async () => {
     user_passwd: passwordValue,
   })
 
-  // ✅ 存储 response.data 到 localStorage
-  localStorage.setItem('token', response?.data?.token)
-
   if (response.code === 0) {
+    // ✅ 存储 response.data 到 localStorage
+    localStorage.setItem('token', response?.data?.token)
+    localStorage.setItem('user', JSON.stringify(response?.data))
     window.location.href = './index.html'
   }
 }
@@ -212,10 +212,11 @@ const tab_2_signInBtn = async () => {
     user_passwd: captchaValue,
   })
 
-  // ✅ 存储 response.data 到 localStorage
-  localStorage.setItem('token', response?.data?.token)
-
   if (response.code === 0) {
+    // ✅ 存储 response.data 到 localStorage
+    localStorage.setItem('token', response?.data?.token)
+    localStorage.setItem('user', JSON.stringify(response?.data))
+
     window.location.href = './index.html'
   }
 }
@@ -223,10 +224,12 @@ const tab_2_signInBtn = async () => {
 // Create your account 的点击事件
 const signUpBtn = async () => {
   console.log('signUpBtn')
-  const email = document.getElementById('email')
+  const email = document.getElementById('tab_2_email')
   const password = document.getElementById('password')
+  const signUp_captcha = document.getElementById('signUp_captcha')
   const emailValue = email.value.trim()
   const passwordValue = password.value.trim()
+  const captchaValue = signUp_captcha.value.trim()
 
   // 邮箱格式验证正则表达式
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -245,6 +248,10 @@ const signUpBtn = async () => {
     showError('Password cannot be less than 6 characters.')
     return
   }
+  if (captchaValue === '') {
+    showError('Please enter your captcha code.')
+    return
+  }
 
   if (!emailPattern.test(emailValue)) {
     showError('Please enter a valid email address.')
@@ -255,10 +262,19 @@ const signUpBtn = async () => {
   console.log('Sign up button clicked.')
 
   // 发送请求到服务器
-  await sendRequest('https://api.thequestlabs.com/api/v1/register', {
+  const response = await sendRequest('https://api.thequestlabs.com/api/v1/register', {
     user_name: emailValue,
     user_passwd: passwordValue,
+    captcha: captchaValue,
   })
+
+  if (response.code === 0) {
+    // ✅ 存储 response.data 到 localStorage
+    localStorage.setItem('token', response?.data?.token)
+    localStorage.setItem('user', JSON.stringify(response?.data))
+
+    window.location.href = './index.html'
+  }
 }
 
 // Google 登录按钮的点击事件
@@ -273,7 +289,7 @@ const googleLoginBtn = async () => {
           headers: { Authorization: `Bearer ${response.access_token}` },
         })
 
-        const profileData = await userinfo.json()
+        const profileData = await userInfo?.json()
         console.log('完整用户信息:', profileData)
 
         const auth_login_response = await sendRequest(
@@ -288,10 +304,11 @@ const googleLoginBtn = async () => {
         console.log('response', response)
         console.log('auth_login_response', auth_login_response)
 
-        // ✅ 存储 response.data 到 localStorage
-        localStorage.setItem('token', response.access_token)
-
         if (response.access_token) {
+          // ✅ 存储 response.data 到 localStorage
+          localStorage.setItem('token', response.access_token)
+          localStorage.setItem('user', JSON.stringify(response?.data))
+
           window.location.href = './index.html'
         }
       }
