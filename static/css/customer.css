@@ -833,20 +833,20 @@ td {
   }
 }
 
-/* 隐藏滚动条（适用于 WebKit 浏览器） */
+/* Hide scrollbar (for WebKit browser)*/
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
-/* 自定义滚动条 */
+/* Customize the scrollbar */
 .scrollbar-custom::-webkit-scrollbar {
-  width: 2px; /* 设置滚动条宽度 */
-  height: 2px; /* 横向滚动条高度 */
+  width: 2px; /* Sets the scrollbar width */
+  height: 2px; /* Horizontal scrollbar height */
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb {
-  background-color: rgba(100, 100, 100, 0.5); /* 滚动条颜色 */
-  border-radius: 4px; /* 圆角 */
+  background-color: rgba(100, 100, 100, 0.5); /* Scrollbar color */
+  border-radius: 4px; /* Rounded corners */
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb:hover {
@@ -855,10 +855,10 @@ td {
 }
 
 .scrollbar-custom::-webkit-scrollbar-track {
-  background-color: rgba(200, 200, 200, 0.2); /* 滚动条轨道颜色 */
+  background-color: rgba(200, 200, 200, 0.2); /* Scrollbar track color */
 }
 .scrollbar-custom::-webkit-scrollbar-corner {
-  background: transparent; /* 让交界处透明 */
+  background: transparent; /* Make the junction transparent */
 }
 .free-btn {
   background: linear-gradient(270deg, #a073eed9 -11.11%, #6e25ed 100%);

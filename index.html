@@ -23,7 +23,9 @@
 </head>
 
 <body x-data=" { page: 'home' , 'loaded' : true, 'stickyMenu' : false, 'navigationOpen' : false, 'scrollTop' :
-    false, 'isLogin' : false }" x-init="isLogin=localStorage.getItem('token') ? true : false;">
+    false, 'isLogin' : false, scrollToSection(id) { const element=document.getElementById(id); if (element) {
+    element.scrollIntoView({ behavior: 'smooth' }); } } }"
+    x-init="isLogin=localStorage.getItem('token') ? true : false;">
 
   <!-- ===== Header Start ===== -->
   <header x-data="{userInfo: JSON.parse(localStorage.getItem('user')), showProfileDropdown: false}"
