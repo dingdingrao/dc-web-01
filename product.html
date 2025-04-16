@@ -12,14 +12,21 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://aitools.leafbox.cn/">
   <link rel="dns-prefetch">
-  <script src=" https://unpkg.com/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap">
-  <!-- <link rel="stylesheet" href="static/css/tailwind.min.css"> -->
-  <link rel=" stylesheet" href="static/css/stars.css">
-  <link rel="stylesheet" href="static/css/customer.css"">
+
+  <link rel="stylesheet" href="./static/css/tailwind.min.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    href="./static/css/swiper-bundle.min.css" />
+  <link rel=" stylesheet" href="./static/css/stars.min.css">
+  <link rel="stylesheet" href="./static/css/customer.min.css"">
+  <!-- <link rel=" stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap"> -->
+
+  <!-- Tailwind -->
+  <!-- <script src=" https://unpkg.com/@tailwindcss/browser@4"></script> -->
 </head>
 
 <body x-data=" { page: 'product' , 'loaded' : true, 'stickyMenu' : false, 'navigationOpen' : false, 'scrollTop' :
@@ -128,10 +135,10 @@
               ">Sign out</a>
                 <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                   <span class="absolute left-0 bottom-0 -z-1 w-full">
-                    <img src="static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                    <img src="./static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
                   </span>
                   <span class="absolute left-0 top-0 -z-1 w-full">
-                    <img src="static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                    <img src="./static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
                   </span>
                 </div>
               </div>
@@ -397,10 +404,10 @@
               ">Sign out</a>
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute left-0 bottom-0 -z-1 w-full">
-                  <img src="static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
                 </span>
                 <span class="absolute left-0 top-0 -z-1 w-full">
-                  <img src="static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
                 </span>
               </div>
             </div>
@@ -486,7 +493,7 @@
                             <input type="radio" name="frequency" value="pro" class="sr-only"
                               :checked="frequencyToggle === 'pro'">
                             <span>Pro</span>
-                            <img src="static/picture/icon-star.svg" alt="icon"
+                            <img src="./static/picture/icon-star.svg" alt="icon"
                               class="absolute top-2 right-3 text-yellow-900 animate__animated"
                               :class="{ 'animate__infinite_ animate__swing': frequencyToggle === 'pro'}">
                           </label>
@@ -499,27 +506,20 @@
                       class="application-bg cta-box-gradient min-h-[70vh] bg-dark rounded-[30px] relative z-1 flex items-center justify-center overflow-hidden -mt-6">
                       <!-- bg shapes -->
                       <span class="absolute bottom-0 left-0 -z-1">
-                        <img src="static/picture/grid.svg" alt="grid">
+                        <img src="./static/picture/grid.svg" alt="grid">
                       </span>
 
                       <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                         <span class="absolute left-1/2 bottom-0 w-full h-full -translate-x-1/2 -z-1">
-                          <img src="static/picture/blur-22.svg" alt="blur" class="max-w-none w-full h-full">
+                          <img src="./static/picture/blur-22.svg" alt="blur" class="max-w-none w-full h-full">
                         </span>
                         <span class="absolute left-1/2 bottom-0 w-full h-full -translate-x-1/2 -z-1">
-                          <img src="static/picture/blur-23.svg" alt="blur" class="max-w-none w-full h-full">
+                          <img src="./static/picture/blur-23.svg" alt="blur" class="max-w-none w-full h-full">
                         </span>
                         <span class="absolute left-1/2 bottom-0 w-full h-full -translate-x-1/2 -z-1">
-                          <img src="static/picture/blur-24.svg" alt="blur" class="max-w-none w-full h-full">
+                          <img src="./static/picture/blur-24.svg" alt="blur" class="max-w-none w-full h-full">
                         </span>
                       </div>
-
-                      <!-- stars -->
-                      <!-- <div
-                        class="max-w-[80%] w-full h-full overflow-hidden absolute -z-1 -bottom-25 left-1/2 -translate-x-1/2">
-                        <div class="stars"></div>
-                        <div class="stars2"></div>
-                      </div> -->
 
                       <!-- 文字 -->
                       <div class="wow animate__animated animate__fadeInUp text-center">
@@ -536,10 +536,6 @@
                           Get Started for Free
                         </a>
                       </div>
-
-                      <!-- <div class="h-full">
-                        <img src="./static/picture/app.png" alt="" class="h-full">
-                      </div> -->
                     </div>
                   </div>
             </div>
@@ -552,19 +548,9 @@
         class="max-w-[1170px] mx-auto px-4 sm:px-4 xl:px-0 py-5 lg:py-8 relative bg-gray-900/50 rounded-[30px] overflow-hidden our--data--card">
         <!-- section title -->
         <div class="wow animate__animated animate__fadeInUp mb-12.5 text-center">
-          <!-- <span
-            class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="static/picture/icon-title.svg" alt="icon">
-
-            <span class="hero-subtitle-text"> Queue </span>
-          </span> -->
           <h2 class="text-white text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
             My Queue
           </h2>
-          <!-- <p class="max-w-[714px] mx-auto font-medium">
-            Credits Redemption Guidelines: Users can redeem accumulated Credits for discounts or rewards. See the
-            standard for details.
-          </p> -->
         </div>
 
         <!-- Task list -->
@@ -708,18 +694,6 @@
             </div>
             <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
               <div>
-                <!-- <p class="text-sm text-gray-300">
-                  Showing
-                  <span class="font-medium">1</span>
-                  to
-                  <span class="font-medium">10</span>
-                  of
-                  <span class="font-medium">97</span>
-                  results
-                </p> -->
-              </div>
-
-              <div>
                 <nav class="isolate inline-flex -space-x-px rounded-md shadow-xs" aria-label="Pagination">
                   <a href="#"
                     class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-gray-700/50 ring-inset hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
@@ -770,7 +744,7 @@
         <div class="wow animate__animated animate__fadeInUp mb-17.5 text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="static/picture/icon-title.svg" alt="icon">
+            <img src="./static/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> Steps </span>
           </span>
@@ -918,7 +892,7 @@
         <div class="wow animate__animated animate__fadeInUp mb-17.5 text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="static/picture/icon-title.svg" alt="icon">
+            <img src="./static/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> Features </span>
           </span>
@@ -947,14 +921,14 @@
               </div>
 
               <div class="wow animate__animated animate__fadeInRight">
-                <img src="static/picture/about2.svg" alt="about">
+                <img src="./static/picture/about2.svg" alt="about">
               </div>
             </div>
           </li>
           <li class="my-30">
             <div class="flex gap-11 flex-wrap justify-between items-center">
               <div class="wow animate__animated animate__fadeInRight hidden xl:block">
-                <img src="static/picture/about2.svg" alt="about">
+                <img src="./static/picture/about2.svg" alt="about">
               </div>
 
               <div class="wow animate__animated animate__fadeInLeft max-w-[570px] w-full">
@@ -981,14 +955,14 @@
               </div>
 
               <div class="wow animate__animated animate__fadeInRight hidden xl:block">
-                <img src="static/picture/about2.svg" alt="about">
+                <img src="./static/picture/about2.svg" alt="about">
               </div>
             </div>
           </li>
           <li class="my-30">
             <div class="flex gap-11 flex-wrap justify-between items-center">
               <div class="wow animate__animated animate__fadeInRight hidden xl:block">
-                <img src="static/picture/about2.svg" alt="about">
+                <img src="./static/picture/about2.svg" alt="about">
               </div>
 
               <div class="wow animate__animated animate__fadeInLeft max-w-[570px] w-full">
@@ -1014,7 +988,7 @@
         <div class="wow animate__animated animate__fadeInUp mb-17.5 text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="static/picture/icon-title.svg" alt="icon">
+            <img src="./static/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> Reward Credits </span>
           </span>
@@ -1165,13 +1139,10 @@
         <div class="wow animate__animated animate__fadeInUp text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="static/picture/icon-title.svg" alt="icon">
+            <img src="./static/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> FQA </span>
           </span>
-          <!-- <h2 class="text-4xl text-white mb-4.5 text-2xl  font-semibold sm:text-4xl xl:text-heading-2">
-            Frequently asked questions
-          </h2> -->
           <h2 class="text-4xl font-semibold text-center tracking-tight text-white sm:text-5xl">Frequently asked
             questions
         </div>
@@ -1223,7 +1194,7 @@
       <div class=" wow animate__animated animate__fadeInUp mb-17.5 text-center">
         <span
           class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-          <img src="static/picture/icon-title.svg" alt="icon">
+          <img src="./static/picture/icon-title.svg" alt="icon">
 
           <span class="hero-subtitle-text"> More Products </span>
         </span>
@@ -1241,7 +1212,7 @@
         <ul role="list"
           class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3">
           <li class="application-item rounded-2xl">
-            <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.png" alt="">
+            <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="">
             <div class="px-[30px] py-[20px]">
               <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Art Generator</h3>
               <p class="text-base/7 text-gray-300">Enhance Images with Free AI Image Upscaler</p>
@@ -1249,7 +1220,7 @@
             </div>
           </li>
           <li class="application-item rounded-2xl">
-            <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.png" alt="">
+            <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="">
             <div class="px-[30px] py-[20px]">
               <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Video Generator</h3>
               <p class="text-base/7 text-gray-300">Enhance Images with Free AI Image Upscaler</p>
@@ -1257,7 +1228,7 @@
             </div>
           </li>
           <li class="application-item rounded-2xl">
-            <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.png" alt="">
+            <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="">
             <div class="px-[30px] py-[20px]">
               <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Image Generator</h3>
               <p class="text-base/7 text-gray-300">Enhance Images with Free AI Image Upscaler</p>
@@ -1288,7 +1259,7 @@
                 Gallery
               </button>
             </div>
-            <!-- 关闭按钮 -->
+            <!-- Close the button -->
             <button @click="open = false"
               class="flex text-center justify-center w-[25px] h-[25px] text-gray-300 bg-gray-700 border-b border-gray-500/40 rounded-full">
               ×
@@ -1346,21 +1317,16 @@
             </div>
           </div>
 
-          <!-- bottom button -->
-          <!-- <div class="flex items-center justify-end py-2 px-4 border-t border-blue-500/40">
-            <button class="px-4 py-1.5 text-[13px] text-white rounded-full free-btn">Upload</button>
-          </div> -->
-
           <!-- bg shapes -->
           <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
             <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-              <img src="static/picture/blur-19.svg" alt="blur" class="max-w-none">
+              <img src="./static/picture/blur-19.svg" alt="blur" class="max-w-none">
             </span>
             <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-              <img src="static/picture/blur-20.svg" alt="blur" class="max-w-none">
+              <img src="./static/picture/blur-20.svg" alt="blur" class="max-w-none">
             </span>
             <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-              <img src="static/picture/blur-21.svg" alt="blur" class="max-w-none">
+              <img src="./static/picture/blur-21.svg" alt="blur" class="max-w-none">
             </span>
           </div>
         </div>
@@ -1524,13 +1490,10 @@
   </button>
   <!-- ====== Back To Top End ===== -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="static/js/wow.min.js"></script>
-  <script src="static/js/main.js"></script>
-  </body>
+  <script defer src="./static/js/alpine.min.js"></script>
+  <script defer src="./static/js/swiper-bundle.min.js"></script>
+  <script defer src="./static/js/wow.min.js"></script>
+  <script defer src="./static/js/main.min.js"></script>
+</body>
 
 </html>

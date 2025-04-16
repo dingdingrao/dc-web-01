@@ -12,18 +12,24 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://aitools.leafbox.cn/">
   <link rel="dns-prefetch">
-  <script src=" https://unpkg.com/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap">
-  <!-- <link rel="stylesheet" href="static/css/tailwind.min.css"> -->
-  <link rel=" stylesheet" href="static/css/stars.css">
-  <link rel="stylesheet" href="static/css/customer.css"">
+
+  <link rel="stylesheet" href="./static/css/tailwind.min.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    href="./static/css/swiper-bundle.min.css" />
+  <link rel=" stylesheet" href="./static/css/stars.min.css">
+  <link rel="stylesheet" href="./static/css/customer.min.css"">
+  <!-- <link rel=" stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap"> -->
+
+  <!-- Tailwind -->
+  <!-- <script src=" https://unpkg.com/@tailwindcss/browser@4"></script> -->
 </head>
 
-<body
-  x-data=" { page: 'pricing' , 'loaded' : true, 'stickyMenu' : false, 'navigationOpen' : false, 'scrollTop' :
+<body x-data=" { page: 'pricing' , 'loaded' : true, 'stickyMenu' : false, 'navigationOpen' : false, 'scrollTop' :
     false, 'isLogin' : false }" x-init="isLogin=localStorage.getItem('token') ? true : false;">
 
   <!-- ===== Header Start ===== -->
@@ -1059,13 +1065,10 @@
   </button>
   <!-- ====== Back To Top End ===== -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="static/js/wow.min.js"></script>
-  <script src="static/js/main.js"></script>
-  </body>
+  <script defer src="./static/js/alpine.min.js"></script>
+  <script defer src="./static/js/swiper-bundle.min.js"></script>
+  <script defer src="./static/js/wow.min.js"></script>
+  <script defer src="./static/js/main.min.js"></script>
+</body>
 
 </html>
