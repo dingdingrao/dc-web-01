@@ -15,15 +15,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="stylesheet" href="./static/css/tailwind.min.css">
+  <link rel="stylesheet" href="./assets/css/tailwind.min.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/animate.min.css" />
   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-    href="./static/css/swiper-bundle.min.css" />
-  <link rel=" stylesheet" href="./static/css/stars.min.css">
-  <link rel="stylesheet" href="./static/css/customer.min.css"">
-  <!-- <link rel=" stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap"> -->
+    href="./assets/css/swiper-bundle.min.css" />
+  <link rel=" stylesheet" href="./assets/css/stars.min.css">
+  <link rel="stylesheet" href="./assets/css/customer.min.css"">
+  <link rel=" stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap">
 
   <!-- Tailwind -->
   <!-- <script src=" https://unpkg.com/@tailwindcss/browser@4"></script> -->
@@ -73,7 +72,7 @@
 
           <!-- Logo -->
           <a class="h-[30px] text-white text-4xl font-extrabold" href="index.html">
-            <img src="./static/picture/logo.svg" alt="VidPix" class="h-full">
+            <img src="./assets/picture/logo.svg" alt="VidPix" class="h-full">
           </a>
 
           <!-- Right -->
@@ -109,7 +108,7 @@
                 <div class="flex items-center justify-between px-4 py-2 text-sm text-gray-300">
                   <div class="flex items-center gap-2">
                     <span class="inline-block w-4">
-                      <img src="./static/picture/gold_coins.svg" alt="">
+                      <img src="./assets/picture/gold_coins.svg" alt="">
                     </span>
                     <span x-text="userInfo?.credit"></span>
                   </div>
@@ -133,10 +132,10 @@
               ">Sign out</a>
                 <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                   <span class="absolute left-0 bottom-0 -z-1 w-full">
-                    <img src="static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                    <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
                   </span>
                   <span class="absolute left-0 top-0 -z-1 w-full">
-                    <img src="static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                    <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
                   </span>
                 </div>
               </div>
@@ -244,7 +243,7 @@
 
         <!-- Logo -->
         <a class="mr-20 text-white text-4xl font-extrabold" href="index.html">
-          <img src="./static/picture/logo.svg" alt="VidPix" srcset="" class="h-[25px] lg:h-[30px]">
+          <img src="./assets/picture/logo.svg" alt="VidPix" srcset="" class="h-[25px] lg:h-[30px]">
         </a>
 
         <!-- Menu -->
@@ -378,7 +377,7 @@
               <div class="flex items-center justify-between px-4 py-2 text-sm text-gray-300">
                 <div class="flex items-center gap-2">
                   <span class="inline-block w-4">
-                    <img src="./static/picture/gold_coins.svg" alt="">
+                    <img src="./assets/picture/gold_coins.svg" alt="">
                   </span>
                   <span x-text="userInfo?.credit"></span>
                 </div>
@@ -402,10 +401,10 @@
               ">Sign out</a>
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute left-0 bottom-0 -z-1 w-full">
-                  <img src="static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
                 </span>
                 <span class="absolute left-0 top-0 -z-1 w-full">
-                  <img src="static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
                 </span>
               </div>
             </div>
@@ -424,7 +423,7 @@
         <div class="wow fadeInUp mb-17.5 text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="static/picture/icon-title.svg" alt="icon">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> Pricing </span>
           </span>
@@ -470,33 +469,33 @@
 
               <ul class="flex flex-col gap-4">
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Subscription with levels</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Advanced features included</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Shared workspaces & tools</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Premium versions functionality</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Customizing the outputs</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Priority customer support</span>
                 </li>
               </ul>
@@ -504,10 +503,10 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute left-0 bottom-0 -z-1 w-full">
-                  <img src="static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
                 </span>
                 <span class="absolute left-0 top-0 -z-1 w-full">
-                  <img src="static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
                 </span>
               </div>
             </div>
@@ -548,27 +547,27 @@
 
               <ul class="flex flex-col gap-4">
                 <li class="flex items-center gap-5">
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Subscription with levels</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Advanced features included</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Shared workspaces & tools</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Premium versions functionality</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Customizing the outputs</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Priority customer support</span>
                 </li>
               </ul>
@@ -576,10 +575,10 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute left-0 bottom-0 -z-1 w-full">
-                  <img src="static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
                 </span>
                 <span class="absolute left-0 top-0 -z-1 w-full">
-                  <img src="static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
                 </span>
               </div>
             </div>
@@ -621,33 +620,33 @@
 
               <ul class="flex flex-col gap-4">
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Subscription with levels</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Advanced features included</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Shared workspaces & tools</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Premium versions functionality</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Customizing the outputs</span>
                 </li>
                 <li class="flex items-center gap-5">
-                  <!-- <img src="static/picture/pricing-icon-04.svg" alt="icon"> -->
-                  <img alt="" src="static/picture/icon-right.svg" class="icon-list">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
                   <span class="font-medium">Priority customer support</span>
                 </li>
               </ul>
@@ -655,10 +654,10 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute left-0 bottom-0 -z-1 w-full">
-                  <img src="static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
                 </span>
                 <span class="absolute left-0 top-0 -z-1 w-full">
-                  <img src="static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
                 </span>
               </div>
             </div>
@@ -675,7 +674,7 @@
         <div class="wow animate__animated animate__fadeInUp text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="static/picture/icon-title.svg" alt="icon">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> FQA </span>
           </span>
@@ -737,7 +736,7 @@
         <div class="wow fadeInUp mb-20 text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="static/picture/icon-title.svg" alt="icon">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text">
               Questions About our AI Tool?
@@ -932,7 +931,7 @@
       <div class="flex flex-wrap justify-between">
         <div class="mb-10 max-w-[571px] w-full">
           <a class="mb-8.5 inline-block text-white text-4xl font-extrabold" href="index.html">
-            <img src="./static/picture/logo.svg" alt="VidPix" srcset="" class="h-[35px]">
+            <img src="./assets/picture/logo.svg" alt="VidPix" srcset="" class="h-[35px]">
           </a>
 
           <p class="mb-12 xl:w-4/5">
@@ -1065,10 +1064,10 @@
   </button>
   <!-- ====== Back To Top End ===== -->
 
-  <script defer src="./static/js/alpine.min.js"></script>
-  <script defer src="./static/js/swiper-bundle.min.js"></script>
-  <script defer src="./static/js/wow.min.js"></script>
-  <script defer src="./static/js/main.min.js"></script>
+  <script defer src="./assets/js/alpine.min.js"></script>
+  <script defer src="./assets/js/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/wow.min.js"></script>
+  <script defer src="./assets/js/main.min.js"></script>
 </body>
 
 </html>

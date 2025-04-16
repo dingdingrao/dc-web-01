@@ -15,15 +15,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="stylesheet" href="./static/css/tailwind.min.css">
+  <link rel="stylesheet" href="./assets/css/tailwind.min.css">
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/animate.min.css" />
   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-    href="./static/css/swiper-bundle.min.css" />
-  <link rel=" stylesheet" href="./static/css/stars.min.css">
-  <link rel="stylesheet" href="./static/css/customer.min.css"">
-  <!-- <link rel=" stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap"> -->
+    href="./assets/css/swiper-bundle.min.css" />
+  <link rel=" stylesheet" href="./assets/css/stars.min.css">
+  <link rel="stylesheet" href="./assets/css/customer.min.css"">
+  <link rel=" stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap">
 
   <!-- Tailwind -->
   <!-- <script src=" https://unpkg.com/@tailwindcss/browser@4"></script> -->
@@ -75,7 +74,7 @@
 
           <!-- Logo -->
           <a class="h-[30px] text-white text-4xl font-extrabold" href="index.html">
-            <img src="./static/picture/logo.svg" alt="VidPix" class="h-full">
+            <img src="./assets/picture/logo.svg" alt="VidPix" class="h-full">
           </a>
 
           <!-- Right -->
@@ -111,7 +110,7 @@
                 <div class="flex items-center justify-between px-4 py-2 text-sm text-gray-300">
                   <div class="flex items-center gap-2">
                     <span class="inline-block w-4">
-                      <img src="./static/picture/gold_coins.svg" alt="">
+                      <img src="./assets/picture/gold_coins.svg" alt="">
                     </span>
                     <span x-text="userInfo?.credit"></span>
                   </div>
@@ -135,10 +134,10 @@
               ">Sign out</a>
                 <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                   <span class="absolute left-0 bottom-0 -z-1 w-full">
-                    <img src="./static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                    <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
                   </span>
                   <span class="absolute left-0 top-0 -z-1 w-full">
-                    <img src="./static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                    <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
                   </span>
                 </div>
               </div>
@@ -246,7 +245,7 @@
 
         <!-- Logo -->
         <a class="mr-20 text-white text-4xl font-extrabold" href="index.html">
-          <img src="./static/picture/logo.svg" alt="VidPix" srcset="" class="h-[25px] lg:h-[30px]">
+          <img src="./assets/picture/logo.svg" alt="VidPix" srcset="" class="h-[25px] lg:h-[30px]">
         </a>
 
         <!-- Menu -->
@@ -380,7 +379,7 @@
               <div class="flex items-center justify-between px-4 py-2 text-sm text-gray-300">
                 <div class="flex items-center gap-2">
                   <span class="inline-block w-4">
-                    <img src="./static/picture/gold_coins.svg" alt="">
+                    <img src="./assets/picture/gold_coins.svg" alt="">
                   </span>
                   <span x-text="userInfo?.credit"></span>
                 </div>
@@ -404,10 +403,10 @@
               ">Sign out</a>
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute left-0 bottom-0 -z-1 w-full">
-                  <img src="./static/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
                 </span>
                 <span class="absolute left-0 top-0 -z-1 w-full">
-                  <img src="./static/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
                 </span>
               </div>
             </div>
@@ -493,7 +492,7 @@
                             <input type="radio" name="frequency" value="pro" class="sr-only"
                               :checked="frequencyToggle === 'pro'">
                             <span>Pro</span>
-                            <img src="./static/picture/icon-star.svg" alt="icon"
+                            <img src="./assets/picture/icon-star.svg" alt="icon"
                               class="absolute top-2 right-3 text-yellow-900 animate__animated"
                               :class="{ 'animate__infinite_ animate__swing': frequencyToggle === 'pro'}">
                           </label>
@@ -506,18 +505,18 @@
                       class="application-bg cta-box-gradient min-h-[70vh] bg-dark rounded-[30px] relative z-1 flex items-center justify-center overflow-hidden -mt-6">
                       <!-- bg shapes -->
                       <span class="absolute bottom-0 left-0 -z-1">
-                        <img src="./static/picture/grid.svg" alt="grid">
+                        <img src="./assets/picture/grid.svg" alt="grid">
                       </span>
 
                       <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                         <span class="absolute left-1/2 bottom-0 w-full h-full -translate-x-1/2 -z-1">
-                          <img src="./static/picture/blur-22.svg" alt="blur" class="max-w-none w-full h-full">
+                          <img src="./assets/picture/blur-22.svg" alt="blur" class="max-w-none w-full h-full">
                         </span>
                         <span class="absolute left-1/2 bottom-0 w-full h-full -translate-x-1/2 -z-1">
-                          <img src="./static/picture/blur-23.svg" alt="blur" class="max-w-none w-full h-full">
+                          <img src="./assets/picture/blur-23.svg" alt="blur" class="max-w-none w-full h-full">
                         </span>
                         <span class="absolute left-1/2 bottom-0 w-full h-full -translate-x-1/2 -z-1">
-                          <img src="./static/picture/blur-24.svg" alt="blur" class="max-w-none w-full h-full">
+                          <img src="./assets/picture/blur-24.svg" alt="blur" class="max-w-none w-full h-full">
                         </span>
                       </div>
 
@@ -744,7 +743,7 @@
         <div class="wow animate__animated animate__fadeInUp mb-17.5 text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="icon">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> Steps </span>
           </span>
@@ -892,7 +891,7 @@
         <div class="wow animate__animated animate__fadeInUp mb-17.5 text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="icon">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> Features </span>
           </span>
@@ -921,14 +920,14 @@
               </div>
 
               <div class="wow animate__animated animate__fadeInRight">
-                <img src="./static/picture/about2.svg" alt="about">
+                <img src="./assets/picture/about2.svg" alt="about">
               </div>
             </div>
           </li>
           <li class="my-30">
             <div class="flex gap-11 flex-wrap justify-between items-center">
               <div class="wow animate__animated animate__fadeInRight hidden xl:block">
-                <img src="./static/picture/about2.svg" alt="about">
+                <img src="./assets/picture/about2.svg" alt="about">
               </div>
 
               <div class="wow animate__animated animate__fadeInLeft max-w-[570px] w-full">
@@ -955,14 +954,14 @@
               </div>
 
               <div class="wow animate__animated animate__fadeInRight hidden xl:block">
-                <img src="./static/picture/about2.svg" alt="about">
+                <img src="./assets/picture/about2.svg" alt="about">
               </div>
             </div>
           </li>
           <li class="my-30">
             <div class="flex gap-11 flex-wrap justify-between items-center">
               <div class="wow animate__animated animate__fadeInRight hidden xl:block">
-                <img src="./static/picture/about2.svg" alt="about">
+                <img src="./assets/picture/about2.svg" alt="about">
               </div>
 
               <div class="wow animate__animated animate__fadeInLeft max-w-[570px] w-full">
@@ -988,7 +987,7 @@
         <div class="wow animate__animated animate__fadeInUp mb-17.5 text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="icon">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> Reward Credits </span>
           </span>
@@ -1139,7 +1138,7 @@
         <div class="wow animate__animated animate__fadeInUp text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="icon">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
 
             <span class="hero-subtitle-text"> FQA </span>
           </span>
@@ -1194,7 +1193,7 @@
       <div class=" wow animate__animated animate__fadeInUp mb-17.5 text-center">
         <span
           class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-          <img src="./static/picture/icon-title.svg" alt="icon">
+          <img src="./assets/picture/icon-title.svg" alt="icon">
 
           <span class="hero-subtitle-text"> More Products </span>
         </span>
@@ -1212,7 +1211,7 @@
         <ul role="list"
           class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3">
           <li class="application-item rounded-2xl">
-            <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="">
+            <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="">
             <div class="px-[30px] py-[20px]">
               <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Art Generator</h3>
               <p class="text-base/7 text-gray-300">Enhance Images with Free AI Image Upscaler</p>
@@ -1220,7 +1219,7 @@
             </div>
           </li>
           <li class="application-item rounded-2xl">
-            <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="">
+            <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="">
             <div class="px-[30px] py-[20px]">
               <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Video Generator</h3>
               <p class="text-base/7 text-gray-300">Enhance Images with Free AI Image Upscaler</p>
@@ -1228,7 +1227,7 @@
             </div>
           </li>
           <li class="application-item rounded-2xl">
-            <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="">
+            <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="">
             <div class="px-[30px] py-[20px]">
               <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Image Generator</h3>
               <p class="text-base/7 text-gray-300">Enhance Images with Free AI Image Upscaler</p>
@@ -1303,15 +1302,15 @@
             <!-- Gallery Tab -->
             <div x-show="tab === 'gallery'">
               <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
-                <img src="./static/picture/blog-01.png" alt="Gallery Image"
+                <img src="./assets/picture/blog-01.png" alt="Gallery Image"
                   class="w-full h-auto rounded-md cursor-pointer">
-                <img src="./static/picture/blog-01.png" alt="Gallery Image"
+                <img src="./assets/picture/blog-01.png" alt="Gallery Image"
                   class="w-full h-auto rounded-md cursor-pointer">
-                <img src="./static/picture/blog-01.png" alt="Gallery Image"
+                <img src="./assets/picture/blog-01.png" alt="Gallery Image"
                   class="w-full h-auto rounded-md cursor-pointer">
-                <img src="./static/picture/blog-01.png" alt="Gallery Image"
+                <img src="./assets/picture/blog-01.png" alt="Gallery Image"
                   class="w-full h-auto rounded-md cursor-pointer">
-                <img src="./static/picture/blog-01.png" alt="Gallery Image"
+                <img src="./assets/picture/blog-01.png" alt="Gallery Image"
                   class="w-full h-auto rounded-md cursor-pointer">
               </div>
             </div>
@@ -1320,13 +1319,13 @@
           <!-- bg shapes -->
           <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
             <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-              <img src="./static/picture/blur-19.svg" alt="blur" class="max-w-none">
+              <img src="./assets/picture/blur-19.svg" alt="blur" class="max-w-none">
             </span>
             <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-              <img src="./static/picture/blur-20.svg" alt="blur" class="max-w-none">
+              <img src="./assets/picture/blur-20.svg" alt="blur" class="max-w-none">
             </span>
             <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-              <img src="./static/picture/blur-21.svg" alt="blur" class="max-w-none">
+              <img src="./assets/picture/blur-21.svg" alt="blur" class="max-w-none">
             </span>
           </div>
         </div>
@@ -1357,7 +1356,7 @@
       <div class="flex flex-wrap justify-between">
         <div class="mb-10 max-w-[571px] w-full">
           <a class="mb-8.5 inline-block text-white text-4xl font-extrabold" href="index.html">
-            <img src="./static/picture/logo.svg" alt="VidPix" srcset="" class="h-[35px]">
+            <img src="./assets/picture/logo.svg" alt="VidPix" srcset="" class="h-[35px]">
           </a>
 
           <p class="mb-12 xl:w-4/5">
@@ -1490,10 +1489,10 @@
   </button>
   <!-- ====== Back To Top End ===== -->
 
-  <script defer src="./static/js/alpine.min.js"></script>
-  <script defer src="./static/js/swiper-bundle.min.js"></script>
-  <script defer src="./static/js/wow.min.js"></script>
-  <script defer src="./static/js/main.min.js"></script>
+  <script defer src="./assets/js/alpine.min.js"></script>
+  <script defer src="./assets/js/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/wow.min.js"></script>
+  <script defer src="./assets/js/main.min.js"></script>
 </body>
 
 </html>

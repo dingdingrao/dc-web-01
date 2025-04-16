@@ -12,18 +12,20 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://aitools.leafbox.cn/">
   <link rel="dns-prefetch">
-  <link rel=" preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap">
 
-  <link rel="stylesheet" href="./static/css/tailwind.min.css">
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-    href="./static/css/swiper-bundle.min.css" />
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./static/css/customer.min.css">
-  <!-- <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap"> -->
+  <link rel="preload" fetchpriority="high" as="image" href="/assets/picture/gradient-1.webp" type="image/webp">
 
+
+  <link rel="stylesheet" href="./assets/css/tailwind.min.css">
+
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/animate.min.css" />
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    href="./assets/css/swiper-bundle.min.css" />
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/customer.min.css">
 
   <!-- Tailwind -->
   <!-- <script src=" https://unpkg.com/@tailwindcss/browser@4">
@@ -76,7 +78,7 @@
 
           <!-- Logo -->
           <a class="h-[30px] text-white text-4xl font-extrabold" href="index.html">
-            <img src="./static/picture/logo.svg" alt="VidPix" class="h-full">
+            <img class="w-[108px] h-[30px]" src="./assets/picture/logo.svg" alt="VidPix">
           </a>
 
           <!-- Right -->
@@ -112,7 +114,7 @@
                 <div class="flex items-center justify-between px-4 py-2 text-sm text-gray-300">
                   <div class="flex items-center gap-2">
                     <span class="inline-block w-4">
-                      <img src="./static/picture/gold_coins.svg" alt="">
+                      <img src="./assets/picture/gold_coins.svg" alt="" loading="lazy">
                     </span>
                     <span x-text="userInfo?.credit"></span>
                   </div>
@@ -136,10 +138,10 @@
                 ">Sign out</a>
                 <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                   <span class="absolute left-0 bottom-0 -z-1 w-full">
-                    <img src="./static/picture/blur-16.svg" alt="blur" class="max-w-none w-full h-full w-full">
+                    <img src="./assets/picture/blur-16.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                   </span>
                   <span class="absolute left-0 top-0 -z-1 w-full">
-                    <img src="./static/picture/blur-17.svg" alt="blur" class="max-w-none w-full h-full w-full">
+                    <img src="./assets/picture/blur-17.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                   </span>
                 </div>
               </div>
@@ -247,7 +249,7 @@
 
         <!-- Logo -->
         <a class="mr-20 text-white text-4xl font-extrabold" href="index.html">
-          <img src="./static/picture/logo.svg" alt="VidPix" srcset="" class="h-[25px] lg:h-[30px]">
+          <img class="w-[108px] h-[30px]" src="./assets/picture/logo.svg" alt="VidPix" srcset="">
         </a>
 
         <!-- Menu -->
@@ -381,7 +383,7 @@
               <div class="flex items-center justify-between px-4 py-2 text-sm text-gray-300">
                 <div class="flex items-center gap-2">
                   <span class="inline-block w-4">
-                    <img src="./static/picture/gold_coins.svg" alt="">
+                    <img src="./assets/picture/gold_coins.svg" alt="" loading="lazy">
                   </span>
                   <span x-text="userInfo?.credit"></span>
                 </div>
@@ -405,10 +407,10 @@
                 ">Sign out</a>
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute left-0 bottom-0 -z-1 w-full">
-                  <img src="./static/picture/blur-16.svg" alt="blur" class="max-w-none w-full h-full w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
                 <span class="absolute left-0 top-0 -z-1 w-full">
-                  <img src="./static/picture/blur-17.svg" alt="blur" class="max-w-none w-full h-full w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -432,22 +434,22 @@
             class="absolute -z-1 -top-[112%] sm:-top-[93%] xl:-top-[62%] left-1/2 -translate-x-1/2 -u-z-10 hero-circle-gradient w-full h-[1046px] rounded-full max-w-[1046px]">
           </div>
           <div class="absolute top-0 left-1/2 -translate-x-1/2 -u-z-10">
-            <img src="./static/picture/blur-02.svg" alt="blur" loading="lazy" class="max-w-none">
+            <img src="./assets/picture/blur-02.svg" alt="blur" loading="lazy" class="max-w-none">
           </div>
           <div class="absolute top-0 left-1/2 -translate-x-1/2 -u-z-10">
-            <img src="./static/picture/blur-01.svg" alt="blur" loading="lazy" class="max-w-none">
+            <!-- <img src="./assets/picture/blur-01.svg" alt="blur" class="max-w-none"> -->
           </div>
         </div>
       </div>
 
       <div class="inner-shape mx-auto">
-        <img src="./static/picture/icon-shape/icon-shape-one.png" alt="Icon Shape" loading="lazy"
+        <img src="./assets/picture/icon-shape/icon-shape-one.png" alt="Icon Shape" loading="lazy"
           class="iconshape iconshape-one">
-        <img src="./static/picture/icon-shape/icon-shape-two.png" alt="Icon Shape" loading="lazy"
+        <img src="./assets/picture/icon-shape/icon-shape-two.png" alt="Icon Shape" loading="lazy"
           class="iconshape iconshape-two">
-        <img src="./static/picture/icon-shape/icon-shape-three.png" alt="Icon Shape" loading="lazy"
+        <img src="./assets/picture/icon-shape/icon-shape-three.png" alt="Icon Shape" loading="lazy"
           class="iconshape iconshape-three">
-        <img src="./static/picture/icon-shape/icon-shape-four.png" alt="Icon Shape" loading="lazy"
+        <img src="./assets/picture/icon-shape/icon-shape-four.png" alt="Icon Shape" loading="lazy"
           class="iconshape iconshape-four">
       </div>
 
@@ -456,7 +458,8 @@
         <div class="text-center">
           <a href="#"
             class="hero-subtitle-gradient hover:hero-subtitle-hover relative mb-5 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="Icon-title" loading="lazy" alt="icon">
+            <img class="w-[17px] h-[17px]" src="./assets/picture/icon-title.svg" alt="Icon-title" loading="lazy"
+              style="width: 17px; height: 17px;">
 
             <span class="hero-subtitle-text">
               Your Ultimate Creative Companion!
@@ -489,7 +492,7 @@
       </div>
 
       <div class="mt-17" data-wow-delay="0.1s">
-        <img src="./static/picture/hero.svg" alt="hero" class="mx-auto w-full">
+        <img src="./assets/picture/hero.svg" alt="hero" class="mx-auto w-[1170px]">
       </div>
     </section>
     <!-- ===== Hero Section End ===== -->
@@ -507,7 +510,8 @@
           <ul role="list"
             class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
             <li class="application-item rounded-2xl">
-              <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="app_01">
+              <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="app_01"
+                loading="lazy">
               <div class="px-[30px] py-[20px]">
                 <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Art Generator</h3>
                 <p class="text-base/7 text-gray-500 leading-[1.5em] mb-2">Enhance Images with Free AI Image Upscaler
@@ -517,7 +521,8 @@
               </div>
             </li>
             <li class="application-item rounded-2xl">
-              <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="app_01">
+              <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="app_01"
+                loading="lazy">
               <div class="px-[30px] py-[20px]">
                 <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Video Generator</h3>
                 <p class="text-base/7 text-gray-500 leading-[1.5em] mb-2">Enhance Images with Free AI Image Upscaler
@@ -527,7 +532,8 @@
               </div>
             </li>
             <li class="application-item rounded-2xl">
-              <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="app_01">
+              <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="app_01"
+                loading="lazy">
               <div class="px-[30px] py-[20px]">
                 <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Image Generator</h3>
                 <p class="text-base/7 text-gray-500 leading-[1.5em] mb-2">Enhance Images with Free AI Image Upscaler
@@ -537,7 +543,8 @@
               </div>
             </li>
             <li class="application-item rounded-2xl">
-              <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="app_01">
+              <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="app_01"
+                loading="lazy">
               <div class="px-[30px] py-[20px]">
                 <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Image Generator</h3>
                 <p class="text-base/7 text-gray-500 leading-[1.5em] mb-2">Enhance Images with Free AI Image Upscaler
@@ -547,7 +554,8 @@
               </div>
             </li>
             <li class="application-item rounded-2xl">
-              <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="app_01">
+              <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="app_01"
+                loading="lazy">
               <div class="px-[30px] py-[20px]">
                 <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Image Generator</h3>
                 <p class="text-base/7 text-gray-500 leading-[1.5em] mb-2">Enhance Images with Free AI Image Upscaler
@@ -557,7 +565,8 @@
               </div>
             </li>
             <li class="application-item rounded-2xl">
-              <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="app_01">
+              <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="app_01"
+                loading="lazy">
               <div class="px-[30px] py-[20px]">
                 <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Image Generator</h3>
                 <p class="text-base/7 text-gray-500 leading-[1.5em] mb-2">Enhance Images with Free AI Image Upscaler
@@ -567,7 +576,8 @@
               </div>
             </li>
             <li class="application-item rounded-2xl">
-              <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="app_01">
+              <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="app_01"
+                loading="lazy">
               <div class="px-[30px] py-[20px]">
                 <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Image Generator</h3>
                 <p class="text-base/7 text-gray-500 leading-[1.5em] mb-2">Enhance Images with Free AI Image Upscaler
@@ -577,7 +587,8 @@
               </div>
             </li>
             <li class="application-item rounded-2xl">
-              <img class="aspect-14/9 w-full object-cover" src="./static/picture/app_01.webp" alt="app_01">
+              <img class="aspect-14/9 w-full object-cover" src="./assets/picture/app_01.webp" alt="app_01"
+                loading="lazy">
               <div class="px-[30px] py-[20px]">
                 <h3 class="text-lg/8 font-semibold tracking-tight text-white">AI Image Generator</h3>
                 <p class="text-base/7 text-gray-500 leading-[1.5em] mb-2">Enhance Images with Free AI Image Upscaler
@@ -600,7 +611,8 @@
         <div class="wow animate__animated animate__fadeInUp text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="icon">
+            <img class="w-[17px] h-[17px]" src="./assets/picture/icon-title.svg" alt="icon" loading="lazy"
+              style="width: 17px; height: 17px;">
 
             <span class="hero-subtitle-text"> Deploy faster </span>
           </span>
@@ -633,8 +645,8 @@
               <div class="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
                 <div
                   class="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                  <img class="size-full object-cover object-top" src="./static/picture/bento-03-mobile-friendly.png"
-                    alt="">
+                  <img class="size-full object-cover object-top" src="./assets/picture/bento-03-mobile-friendly.webp"
+                    alt="" loading="lazy">
                 </div>
               </div>
             </div>
@@ -655,7 +667,8 @@
                   consectetur adipisicing elit maiores impedit.</p>
               </div>
               <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
-                <img class="w-full max-lg:max-w-xs" src="./static/picture/bento-03-performance.png" alt="">
+                <img class="w-full max-lg:max-w-xs" src="./assets/picture/bento-03-performance.webp" alt=""
+                  loading="lazy">
               </div>
             </div>
             <div
@@ -672,7 +685,8 @@
                   Tellus semper adipiscing suspendisse semper morbi.</p>
               </div>
               <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                <img class="h-[min(152px,40cqw)] object-cover" src="./static/picture/bento-03-security.png" alt="">
+                <img class="h-[min(152px,40cqw)] object-cover" src="./assets/picture/bento-03-security.webp" alt=""
+                  loading="lazy">
               </div>
             </div>
             <div class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5"></div>
@@ -722,7 +736,8 @@
         <div class="wow animate__animated animate__fadeInUp text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="icon">
+            <img class="w-[17px] h-[17px]" src="./assets/picture/icon-title.svg" alt="icon" loading="lazy"
+              style="width: 17px; height: 17px;">
 
             <span class="hero-subtitle-text"> Some of Main Features </span>
           </span>
@@ -753,7 +768,7 @@
                   class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
                 <span
                   class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-8 mx-auto">
-                  <img src="./static/picture/icon-01.svg" alt="icon">
+                  <img src="./assets/picture/icon-01.svg" alt="icon" loading="lazy">
                 </span>
                 <h4 class="font-semibold text-lg text-white mb-4">
                   AI Image Generation
@@ -773,7 +788,7 @@
                   class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
                 <span
                   class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-8 mx-auto">
-                  <img src="./static/picture/icon-02.svg" alt="icon">
+                  <img src="./assets/picture/icon-02.svg" alt="icon" loading="lazy">
                 </span>
                 <h4 class="font-semibold text-lg text-white mb-4">
                   High-Resolution Output
@@ -792,7 +807,7 @@
                   class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1"></span>
                 <span
                   class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-8 mx-auto">
-                  <img src="./static/picture/icon-03.svg" alt="icon">
+                  <img src="./assets/picture/icon-03.svg" alt="icon" loading="lazy">
                 </span>
                 <h4 class="font-semibold text-lg text-white mb-4">
                   Diverse Styles
@@ -816,7 +831,7 @@
                   class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1 rotate-180"></span>
                 <span
                   class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-8 mx-auto">
-                  <img src="./static/picture/icon-04.svg" alt="icon">
+                  <img src="./assets/picture/icon-04.svg" alt="icon" loading="lazy">
                 </span>
                 <h4 class="font-semibold text-lg text-white mb-4">
                   Smart Image Enhancement
@@ -835,7 +850,7 @@
                   class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1 rotate-180"></span>
                 <span
                   class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-8 mx-auto">
-                  <img src="./static/picture/icon-05.svg" alt="icon">
+                  <img src="./assets/picture/icon-05.svg" alt="icon" loading="lazy">
                 </span>
                 <h4 class="font-semibold text-lg text-white mb-4">
                   Text-to-Image Transformation
@@ -854,7 +869,7 @@
                   class="group-hover:opacity-100 opacity-0 features-bg absolute w-full h-full left-0 top-0 -z-1 rotate-180"></span>
                 <span
                   class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-8 mx-auto">
-                  <img src="./static/picture/icon-06.svg" alt="icon">
+                  <img src="./assets/picture/icon-06.svg" alt="icon" loading="lazy">
                 </span>
                 <h4 class="font-semibold text-lg text-white mb-4">
                   Customization & Fine-Tuning
@@ -877,7 +892,8 @@
         <div class="wow animate__animated animate__fadeInUp text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="icon">
+            <img class="w-[17px] h-[17px]" src="./assets/picture/icon-title.svg" alt="icon" loading="lazy"
+              style="width: 17px; height: 17px;">
 
             <span class="hero-subtitle-text"> Our Data </span>
           </span>
@@ -891,8 +907,12 @@
         </div>
 
         <div class="mt-10 sm:mt-16 our--data--card relative rounded-3xl features-box-border">
-          <img class="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2"
-            src="./static/picture/OurData.webp" alt="">
+          <img
+            class="max-sm:hidden h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2"
+            src="./assets/picture/OurData.webp" alt="" loading="lazy">
+          <img
+            class="max-sm:block h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2"
+            src="./assets/picture/OurData-sm.webp" alt="" loading="lazy">
           <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
             <div class="px-6 pt-16 pb-24 sm:pt-20 sm:pb-32 lg:col-start-2 lg:px-8 lg:pt-32">
               <div class="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
@@ -935,7 +955,8 @@
         <div class="wow animate__animated animate__fadeInUp text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="icon">
+            <img class="w-[17px] h-[17px]" src="./assets/picture/icon-title.svg" alt="icon" loading="lazy"
+              style="width: 17px; height: 17px;">
 
             <span class="hero-subtitle-text"> FQA </span>
           </span>
@@ -993,7 +1014,8 @@
         <div class="wow animate__animated animate__fadeInUp mb-15 text-center">
           <span
             class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-            <img src="./static/picture/icon-title.svg" alt="icon">
+            <img class="w-[17px] h-[17px]" src="./assets/picture/icon-title.svg" alt="icon" loading="lazy"
+              style="width: 17px; height: 17px;">
 
             <span class="hero-subtitle-text"> The Community </span>
           </span>
@@ -1015,7 +1037,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-01.png" alt="user">
+                  <img src="./assets/picture/user-01.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1035,7 +1057,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1044,7 +1066,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-02.png" alt="user">
+                  <img src="./assets/picture/user-02.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1069,7 +1091,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1078,7 +1100,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-03.png" alt="user">
+                  <img src="./assets/picture/user-03.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1098,7 +1120,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1107,7 +1129,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-04.png" alt="user">
+                  <img src="./assets/picture/user-04.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1132,7 +1154,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1141,7 +1163,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-05.png" alt="user">
+                  <img src="./assets/picture/user-05.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1161,7 +1183,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1170,7 +1192,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-06.png" alt="user">
+                  <img src="./assets/picture/user-06.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1190,7 +1212,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1199,7 +1221,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-07.png" alt="user">
+                  <img src="./assets/picture/user-07.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1219,7 +1241,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1228,7 +1250,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-08.png" alt="user">
+                  <img src="./assets/picture/user-08.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1248,7 +1270,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1257,7 +1279,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-09.png" alt="user">
+                  <img src="./assets/picture/user-09.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1282,7 +1304,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1294,7 +1316,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-04.png" alt="user">
+                  <img src="./assets/picture/user-04.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1319,7 +1341,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1328,7 +1350,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-05.png" alt="user">
+                  <img src="./assets/picture/user-05.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1348,7 +1370,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1357,7 +1379,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-06.png" alt="user">
+                  <img src="./assets/picture/user-06.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1377,7 +1399,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1386,7 +1408,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-07.png" alt="user">
+                  <img src="./assets/picture/user-07.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1406,7 +1428,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1415,7 +1437,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-08.png" alt="user">
+                  <img src="./assets/picture/user-08.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1435,7 +1457,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1444,7 +1466,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-09.png" alt="user">
+                  <img src="./assets/picture/user-09.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1469,7 +1491,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1478,7 +1500,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-01.png" alt="user">
+                  <img src="./assets/picture/user-01.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1498,7 +1520,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1507,7 +1529,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-02.png" alt="user">
+                  <img src="./assets/picture/user-02.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1532,7 +1554,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1541,7 +1563,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-03.png" alt="user">
+                  <img src="./assets/picture/user-03.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1561,7 +1583,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1573,7 +1595,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-07.png" alt="user">
+                  <img src="./assets/picture/user-07.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1593,7 +1615,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1602,7 +1624,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-08.png" alt="user">
+                  <img src="./assets/picture/user-08.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1622,7 +1644,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1631,7 +1653,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-09.png" alt="user">
+                  <img src="./assets/picture/user-09.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1656,7 +1678,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1665,7 +1687,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-01.png" alt="user">
+                  <img src="./assets/picture/user-01.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1685,7 +1707,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1694,7 +1716,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-02.png" alt="user">
+                  <img src="./assets/picture/user-02.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1719,7 +1741,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1728,7 +1750,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-03.png" alt="user">
+                  <img src="./assets/picture/user-03.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1748,7 +1770,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1757,7 +1779,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-04.png" alt="user">
+                  <img src="./assets/picture/user-04.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1782,7 +1804,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1791,7 +1813,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-05.png" alt="user">
+                  <img src="./assets/picture/user-05.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1811,7 +1833,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1820,7 +1842,7 @@
             <div class="user-border-gradient relative overflow-hidden px-8 py-9 rounded-[19px]">
               <div class="flex items-center gap-4.5">
                 <div class="max-w-[48px] w-full h-12 rounded-full">
-                  <img src="./static/picture/user-06.png" alt="user">
+                  <img src="./assets/picture/user-06.png" alt="user" loading="lazy">
                 </div>
                 <div>
                   <h5 class="text-white text-sm font-medium">
@@ -1840,7 +1862,7 @@
               <!-- bg shapes -->
               <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
                 <span class="absolute right-0 bottom-0 -z-1">
-                  <img src="./static/picture/blur-18.svg" alt="blur" class="max-w-none w-full h-full">
+                  <img src="./assets/picture/blur-18.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
                 </span>
               </div>
             </div>
@@ -1867,7 +1889,8 @@
           class="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
           <img
             class="wow animate__animated animate__fadeInLeft h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-            src="./static/picture/cta.avif" alt="">
+            src="./assets/picture/cta.webp" alt="" loading="lazy">
+          </amp-img>
           <div class="wow animate__animated animate__fadeInRight w-full flex-auto">
             <h2 class="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">CTA</h2>
             <p class="mt-6 text-lg/8 text-pretty text-gray-300">Lorem ipsum dolor sit amet consect adipisicing elit.
@@ -1952,13 +1975,13 @@
 
         <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
           <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-            <img src="./static/picture/blur-19.svg" alt="blur" class="max-w-none w-full h-full">
+            <img src="./assets/picture/blur-19.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
           </span>
           <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-            <img src="./static/picture/blur-20.svg" alt="blur" class="max-w-none w-full h-full">
+            <img src="./assets/picture/blur-20.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
           </span>
           <span class="absolute left-1/2 top-0 -translate-x-1/2 -z-1">
-            <img src="./static/picture/blur-21.svg" alt="blur" class="max-w-none w-full h-full">
+            <img src="./assets/picture/blur-21.svg" alt="blur" loading="lazy" class="max-w-none w-full h-full">
           </span>
         </div>
       </div>
@@ -1980,109 +2003,109 @@
               <!-- Slides -->
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-01.svg" alt="client">
+                  <img src="./assets/picture/client-01.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-02.svg" alt="client">
+                  <img src="./assets/picture/client-02.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-03.svg" alt="client">
+                  <img src="./assets/picture/client-03.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-04.svg" alt="client">
+                  <img src="./assets/picture/client-04.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-05.svg" alt="client">
+                  <img src="./assets/picture/client-05.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-06.svg" alt="client">
+                  <img src="./assets/picture/client-06.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img class="mt-3" src="./static/picture/client-07.svg" alt="client">
-                </a>
-              </div>
-
-              <div class="swiper-slide !w-auto">
-                <a href="#">
-                  <img src="./static/picture/client-01.svg" alt="client">
-                </a>
-              </div>
-              <div class="swiper-slide !w-auto">
-                <a href="#">
-                  <img src="./static/picture/client-02.svg" alt="client">
-                </a>
-              </div>
-              <div class="swiper-slide !w-auto">
-                <a href="#">
-                  <img src="./static/picture/client-03.svg" alt="client">
-                </a>
-              </div>
-              <div class="swiper-slide !w-auto">
-                <a href="#">
-                  <img src="./static/picture/client-04.svg" alt="client">
-                </a>
-              </div>
-              <div class="swiper-slide !w-auto">
-                <a href="#">
-                  <img src="./static/picture/client-05.svg" alt="client">
-                </a>
-              </div>
-              <div class="swiper-slide !w-auto">
-                <a href="#">
-                  <img src="./static/picture/client-06.svg" alt="client">
-                </a>
-              </div>
-              <div class="swiper-slide !w-auto">
-                <a href="#">
-                  <img class="mt-3" src="./static/picture/client-07.svg" alt="client">
+                  <img class="mt-3" src="./assets/picture/client-07.svg" alt="client" loading="lazy">
                 </a>
               </div>
 
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-01.svg" alt="client">
+                  <img src="./assets/picture/client-01.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-02.svg" alt="client">
+                  <img src="./assets/picture/client-02.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-03.svg" alt="client">
+                  <img src="./assets/picture/client-03.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-04.svg" alt="client">
+                  <img src="./assets/picture/client-04.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-05.svg" alt="client">
+                  <img src="./assets/picture/client-05.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img src="./static/picture/client-06.svg" alt="client">
+                  <img src="./assets/picture/client-06.svg" alt="client" loading="lazy">
                 </a>
               </div>
               <div class="swiper-slide !w-auto">
                 <a href="#">
-                  <img class="mt-3" src="./static/picture/client-07.svg" alt="client">
+                  <img class="mt-3" src="./assets/picture/client-07.svg" alt="client" loading="lazy">
+                </a>
+              </div>
+
+              <div class="swiper-slide !w-auto">
+                <a href="#">
+                  <img src="./assets/picture/client-01.svg" alt="client" loading="lazy">
+                </a>
+              </div>
+              <div class="swiper-slide !w-auto">
+                <a href="#">
+                  <img src="./assets/picture/client-02.svg" alt="client" loading="lazy">
+                </a>
+              </div>
+              <div class="swiper-slide !w-auto">
+                <a href="#">
+                  <img src="./assets/picture/client-03.svg" alt="client" loading="lazy">
+                </a>
+              </div>
+              <div class="swiper-slide !w-auto">
+                <a href="#">
+                  <img src="./assets/picture/client-04.svg" alt="client" loading="lazy">
+                </a>
+              </div>
+              <div class="swiper-slide !w-auto">
+                <a href="#">
+                  <img src="./assets/picture/client-05.svg" alt="client" loading="lazy">
+                </a>
+              </div>
+              <div class="swiper-slide !w-auto">
+                <a href="#">
+                  <img src="./assets/picture/client-06.svg" alt="client" loading="lazy">
+                </a>
+              </div>
+              <div class="swiper-slide !w-auto">
+                <a href="#">
+                  <img class="mt-3" src="./assets/picture/client-07.svg" alt="client" loading="lazy">
                 </a>
               </div>
             </div>
@@ -2114,7 +2137,7 @@
       <div class="flex flex-wrap justify-between">
         <div class="mb-10 max-w-[571px] w-full">
           <a class="mb-8.5 inline-block text-white text-4xl font-extrabold" href="index.html">
-            <img src="./static/picture/logo.svg" alt="VidPix" srcset="" class="h-[35px]">
+            <img src="./assets/picture/logo.svg" alt="VidPix" srcset="" class="w-[126px] h-[35px]">
           </a>
 
           <p class="mb-12 xl:w-4/5">
@@ -2247,10 +2270,10 @@
   </button>
   <!-- ====== Back To Top End ===== -->
 
-  <script defer src="./static/js/alpine.min.js"></script>
-  <script defer src="./static/js/swiper-bundle.min.js"></script>
-  <script defer src="./static/js/wow.min.js"></script>
-  <script defer src="./static/js/main.min.js"></script>
+  <script defer src="./assets/js/alpine.min.js"></script>
+  <script defer src="./assets/js/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/wow.min.js"></script>
+  <script defer src="./assets/js/main.min.js"></script>
 </body>
 
 </html>
