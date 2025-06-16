@@ -449,8 +449,8 @@
               class="relative flex cursor-pointer items-center justify-center rounded-full px-5 py-2 text-sm font-medium transition-all duration-300 ease-in-out text-white"
               role="radio" aria-checked="true" tabindex="1">
               <span>Annually</span>
-              <span x-show="tabToggle === 'Pro'"
-                class="absolute -right-2 -top-2 h-5 items-center justify-center rounded-full bg-gradient-to-r from-amber-400 to-orange-400 px-2 text-[11px] font-medium text-white leading-[20px] shadow-sm">-30%</span>
+              <span
+                class="absolute z-10 -right-2 -top-3 h-5 items-center justify-center rounded-full bg-gradient-to-r from-amber-400 to-orange-400 px-2 text-[11px] font-medium text-black leading-[20px] shadow-sm">-30%</span>
             </span>
             <span @click="tabToggle = 'Max'" :class="{ 'bg-indigo-500': tabToggle === 'Max' }"
               class="relative flex cursor-pointer items-center justify-center rounded-full px-5 py-2 text-sm font-medium transition-all duration-300 ease-in-out text-white"
@@ -482,12 +482,12 @@
                 <div class="flex justify-between">
                   <h3 id="tier-max" class="text-base font-semibold leading-7 text-yellow-500">Basic</h3>
                   <div class="flex items-baseline">
-                    <span class="font-semibold leading-7 text-gray-600">$</span>
+                    <span class="font-semibold leading-7 text-gray-400">$</span>
                     <span class="ml-1 font-bold tracking-tight text-gray-400">0.024 / Credit</span>
                   </div>
                 </div>
                 <div class="flex items-baseline gap-x-2 justify-center my-10">
-                  <span class="text-2xl font-semibold leading-7 text-gray-600">$</span>
+                  <span class="text-2xl font-semibold leading-7 text-gray-400">$</span>
                   <div class="flex flex-col">
                     <div class="flex items-center gap-2">
                       <span
@@ -591,12 +591,12 @@
                 <div class="flex justify-between">
                   <h3 id="tier-max" class="text-base font-semibold leading-7 text-yellow-500">Pro</h3>
                   <div class="flex items-baseline">
-                    <span class="font-semibold leading-7 text-gray-600">$</span>
+                    <span class="font-semibold leading-7 text-gray-400">$</span>
                     <span class="ml-1 font-bold tracking-tight text-gray-400">0.015 / Credit</span>
                   </div>
                 </div>
                 <div class="flex items-baseline gap-x-2 justify-center my-10">
-                  <span class="text-2xl font-semibold leading-7 text-gray-600">$</span>
+                  <span class="text-2xl font-semibold leading-7 text-gray-400">$</span>
                   <div class="flex flex-col">
                     <div class="flex items-center gap-2">
                       <span
@@ -700,12 +700,12 @@
                 <div class="flex justify-between">
                   <h3 id="tier-max" class="text-base font-semibold leading-7 text-yellow-500">Max</h3>
                   <div class="flex items-baseline">
-                    <span class="font-semibold leading-7 text-gray-600">$</span>
+                    <span class="font-semibold leading-7 text-gray-400">$</span>
                     <span class="ml-1 font-bold tracking-tight text-gray-400">0.008 / Credit</span>
                   </div>
                 </div>
                 <div class="flex items-baseline gap-x-2 justify-center my-10">
-                  <span class="text-2xl font-semibold leading-7 text-gray-600">$</span>
+                  <span class="text-2xl font-semibold leading-7 text-gray-400">$</span>
                   <div class="flex flex-col">
                     <div class="flex items-center gap-2">
                       <span
@@ -810,13 +810,13 @@
                 <div class="flex justify-between">
                   <h3 id="tier-max" class="text-base font-semibold leading-7 text-yellow-500">Basic</h3>
                   <div class="flex items-baseline">
-                    <span class="font-semibold leading-7 text-gray-600">$</span>
+                    <span class="font-semibold leading-7 text-gray-400">$</span>
                     <span class="ml-1 font-bold tracking-tight text-gray-400">0.024 / Credit</span>
                   </div>
                 </div>
                 <div class="my-10 text-center">
                   <div class="flex items-baseline gap-x-2 justify-center">
-                    <span class="text-2xl font-semibold leading-7 text-gray-600">$</span>
+                    <span class="text-2xl font-semibold leading-7 text-gray-400">$</span>
                     <div class="flex flex-col">
                       <div class="flex items-center gap-2">
                         <span
@@ -923,13 +923,13 @@
                 <div class="flex justify-between">
                   <h3 id="tier-max" class="text-base font-semibold leading-7 text-yellow-500">Pro</h3>
                   <div class="flex items-baseline">
-                    <span class="font-semibold leading-7 text-gray-600">$</span>
+                    <span class="font-semibold leading-7 text-gray-400">$</span>
                     <span class="ml-1 font-bold tracking-tight text-gray-400">0.015 / Credit</span>
                   </div>
                 </div>
                 <div class="my-10 text-center">
                   <div class="flex items-baseline gap-x-2 justify-center">
-                    <span class="text-2xl font-semibold leading-7 text-gray-600">$</span>
+                    <span class="text-2xl font-semibold leading-7 text-gray-400">$</span>
                     <div class="flex flex-col">
                       <div class="flex items-center gap-2">
                         <span
@@ -1036,13 +1036,13 @@
                 <div class="flex justify-between">
                   <h3 id="tier-max" class="text-base font-semibold leading-7 text-yellow-500">Max</h3>
                   <div class="flex items-baseline">
-                    <span class="font-semibold leading-7 text-gray-600">$</span>
+                    <span class="font-semibold leading-7 text-gray-400">$</span>
                     <span class="ml-1 font-bold tracking-tight text-gray-400">0.008 / Credit</span>
                   </div>
                 </div>
                 <div class="my-10 text-center">
                   <div class="flex items-baseline gap-x-2 justify-center">
-                    <span class="text-2xl font-semibold leading-7 text-gray-600">$</span>
+                    <span class="text-2xl font-semibold leading-7 text-gray-400">$</span>
                     <div class="flex flex-col">
                       <div class="flex items-center gap-2">
                         <span
@@ -1150,13 +1150,13 @@
                 <div class="flex justify-between">
                   <h3 id="tier-max" class="text-base font-semibold leading-7 text-yellow-500">Basic</h3>
                   <div class="flex items-baseline">
-                    <span class="font-semibold leading-7 text-gray-600">$</span>
+                    <span class="font-semibold leading-7 text-gray-400">$</span>
                     <span class="ml-1 font-bold tracking-tight text-gray-400">0.024 / Credit</span>
                   </div>
                 </div>
                 <div class="my-10 text-center">
                   <div class="flex items-baseline gap-x-2 justify-center">
-                    <span class="text-2xl font-semibold leading-7 text-gray-600">$</span>
+                    <span class="text-2xl font-semibold leading-7 text-gray-400">$</span>
                     <div class="flex flex-col">
                       <div class="flex items-center gap-2">
                         <span
@@ -1261,13 +1261,13 @@
                 <div class="flex justify-between">
                   <h3 id="tier-max" class="text-base font-semibold leading-7 text-yellow-500">Pro</h3>
                   <div class="flex items-baseline">
-                    <span class="font-semibold leading-7 text-gray-600">$</span>
+                    <span class="font-semibold leading-7 text-gray-400">$</span>
                     <span class="ml-1 font-bold tracking-tight text-gray-400">0.015 / Credit</span>
                   </div>
                 </div>
                 <div class="my-10 text-center">
                   <div class="flex items-baseline gap-x-2 justify-center">
-                    <span class="text-2xl font-semibold leading-7 text-gray-600">$</span>
+                    <span class="text-2xl font-semibold leading-7 text-gray-400">$</span>
                     <div class="flex flex-col">
                       <div class="flex items-center gap-2">
                         <span
@@ -1372,13 +1372,13 @@
                 <div class="flex justify-between">
                   <h3 id="tier-max" class="text-base font-semibold leading-7 text-yellow-500">Max</h3>
                   <div class="flex items-baseline">
-                    <span class="font-semibold leading-7 text-gray-600">$</span>
+                    <span class="font-semibold leading-7 text-gray-400">$</span>
                     <span class="ml-1 font-bold tracking-tight text-gray-400">0.008 / Credit</span>
                   </div>
                 </div>
                 <div class="my-10 text-center">
                   <div class="flex items-baseline gap-x-2 justify-center">
-                    <span class="text-2xl font-semibold leading-7 text-gray-600">$</span>
+                    <span class="text-2xl font-semibold leading-7 text-gray-400">$</span>
                     <div class="flex flex-col">
                       <div class="flex items-center gap-2">
                         <span
