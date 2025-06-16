@@ -566,9 +566,9 @@ td {
 .application-item {
   border: 1px solid #242133;
   border-radius: 25px;
-  /* background-image: linear-gradient(0deg, #000000 0%, #0e0e0e 100%); */
-  /* box-shadow: 0 0 80px 0 #000; */
-  /* transition: all 0.35s ease-in-out; */
+  background-image: linear-gradient(0deg, #000000 0%, #0e0e0e 100%);
+  box-shadow: 0 0 80px 0 #000;
+  transition: all 0.35s ease-in-out;
   overflow: hidden;
 }
 .featured--card .featured--card--bg {
@@ -579,7 +579,7 @@ td {
 .application-item:hover {
   /* background: linear-gradient(#0e1011, #0f1012) padding-box,
     linear-gradient(to bottom, #5178db47, #b14bf452, #6e7bfc2b) border-box; */
-  /* box-shadow: 2px 2px 80px 3px rgba(161, 128, 255, 0.3); */
+  box-shadow: 2px 2px 80px 3px rgba(161, 128, 255, 0.3);
 }
 
 .our--data--card {
@@ -588,8 +588,8 @@ td {
   background-image: linear-gradient(0deg, #000000 0%, #0e0e0e 100%);
   background: url(../picture/service-bg.jpeg) center/contain,
     linear-gradient(0deg, #000000 0%, #0e0e0e 100%);
-  /* box-shadow: 0 0 80px 0 #000; */
-  /* transition: all 0.35s ease-in-out; */
+  box-shadow: 0 0 80px 0 #000;
+  transition: all 0.35s ease-in-out;
   overflow: hidden;
 }
 .nav__menu > a:hover::after,

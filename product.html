@@ -16,11 +16,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link rel="stylesheet" href="./assets/css/tailwind.min.css">
-  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/animate.min.css" />
+  <!-- <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/animate.min.css" /> -->
   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
     href="./assets/css/swiper-bundle.min.css" />
   <link rel=" stylesheet" href="./assets/css/stars.min.css">
-  <link rel="stylesheet" href="./assets/css/customer.min.css"">
+  <link rel="stylesheet" href="./assets/css/customer.css"">
   <link rel=" stylesheet"
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap">
 
@@ -434,7 +434,7 @@
         <!-- Tag -->
         <div
           class="scrollbar-custom tags-bar sm:sticky-tags max-sm:max-w-[100vw] max-sm:px-[1em] max-w-[1170px] w-full mb-5 rounded-lg px-8 backdrop-blur-lg z100"
-          :class="{ 'sticky-tags': stickyTags }" @scroll.window="stickyTags = (window.scrollY > 108) ? true : false">
+          :class="{ 'sticky-tags': stickyTags }" @scroll.window="stickyTags = (window.scrollY > 88) ? true : false">
           <div class="flex items-center">
             <div class="sm:block">
               <nav class="-mb-px flex items-center">

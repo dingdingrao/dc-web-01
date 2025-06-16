@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | vidpix</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description"
+    content="Harness the power of cloud GPU computing with The Quest Labs. Experience high-performance GPU servers for AI training, machine learning, rendering, and more. Start your journey today!">
+  <link rel="icon" href="favicon.ico">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://aitools.leafbox.cn/">
+  <link rel="dns-prefetch">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="./assets/css/tailwind.min.css">
+  <!-- <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/css/animate.min.css" /> -->
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+    href="./assets/css/swiper-bundle.min.css" />
+  <link rel=" stylesheet" href="./assets/css/stars.min.css">
+  <link rel="stylesheet" href="./assets/css/customer.css"">
+  <link rel=" stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;700;800&display=swap">
+
+  <!-- Tailwind -->
+  <!-- <script src=" https://unpkg.com/@tailwindcss/browser@4"></script> -->
+</head>
+
+<body x-data=" { page: 'pricing' , 'loaded' : true, 'stickyMenu' : false, 'navigationOpen' : false, 'scrollTop' :
+    false, 'isLogin' : false }" x-init="isLogin=localStorage.getItem('token') ? true : false;">
+
+  <!-- ===== Header Start ===== -->
+  <header x-data="{userInfo: JSON.parse(localStorage.getItem('user')), showProfileDropdown: false}"
+    @click.outside="showProfileDropdown = false" class="fixed  left-0 top-0 w-full z-9999 py-7 lg:py-0"
+    :class="{ 'dark:bg-gray-800/10 after:absolute after:-z-1 after:w-full after:h-full after:top-0 after:bottom-0 after:left-0 after:right-0 after:backdrop-blur-lg shadow lg:!py-0 transition duration-100 before:absolute before:w-full before:h-[1px] before:bottom-0 before:left-0 features-row-border' : stickyMenu || navigationOpen}"
+    @scroll.window="stickyMenu = (window.scrollY > 0) ? true : false">
+    <div class="relative max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0 lg:flex items-center justify-between">
+      <!-- H5 -->
+      <section class="lg:hidden w-full flex flex-col justify-between">
+        <!-- TopBar -->
+        <div class="flex item-center justify-between">
+          <!-- Left -->
+          <div class="flex items-center gap-4">
+            <!-- Hamburger Toggle BTN -->
+            <button class="lg:hidden block" @click="navigationOpen = !navigationOpen">
+              <span class="block relative cursor-pointer w-5.5 h-5.5">
+                <span class="du-block absolute right-0 w-full h-full">
+                  <span
+                    class="block relative top-0 left-0 bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-[0]"
+                    :class="{ '!w-full delay-300': !navigationOpen }"></span>
+                  <span
+                    class="block relative top-0 left-0 bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-150"
+                    :class="{ '!w-full delay-400': !navigationOpen }"></span>
+                  <span
+                    class="block relative top-0 left-0 bg-white rounded-sm w-0 h-0.5 my-1 ease-in-out duration-200 delay-200"
+                    :class="{ '!w-full delay-500': !navigationOpen }"></span>
+                </span>
+                <span class="du-block absolute right-0 w-full h-full rotate-45">
+                  <span
+                    class="block bg-white rounded-sm ease-in-out duration-200 delay-300 absolute left-2.5 top-0 w-0.5 h-full"
+                    :class="{ '!h-0 delay-[0]': !navigationOpen }"></span>
+                  <span
+                    class="block bg-white rounded-sm ease-in-out duration-200 delay-400 absolute left-0 top-2.5 w-full h-0.5"
+                    :class="{ '!h-0 dealy-200': !navigationOpen }"></span>
+                </span>
+              </span>
+            </button>
+            <!-- Hamburger Toggle BTN -->
+          </div>
+
+          <!-- Logo -->
+          <a class="h-[30px] text-white text-4xl font-extrabold" href="index.html">
+            <img src="./assets/picture/logo.svg" alt="VidPix" class="h-full">
+          </a>
+
+          <!-- Right -->
+          <div class="flex items-center gap-3">
+            <!-- Sign in / Sign up -->
+            <div x-show="!isLogin" class="flex items-center justify-center gap-4">
+              <a href="signIn.html" class="text-white text-sm hover:text-opacity-75">Sign in</a>
+              <a href="signUp.html"
+                class="button-gradient relative rounded-full text-white text-sm flex items-center gap-1.5 py-1.5 px-3.5 ">
+                Sign up
+                <svg class="mt-0.5" width="16" height="16" viewbox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.4002 7.60002L9.2252 2.35002C9.0002 2.12502 8.6502 2.12502 8.4252 2.35002C8.2002 2.57502 8.2002 2.92502 8.4252 3.15002L12.6252 7.42502H2.0002C1.7002 7.42502 1.4502 7.67502 1.4502 7.97502C1.4502 8.27502 1.7002 8.55003 2.0002 8.55003H12.6752L8.4252 12.875C8.2002 13.1 8.2002 13.45 8.4252 13.675C8.5252 13.775 8.6752 13.825 8.8252 13.825C8.9752 13.825 9.1252 13.775 9.2252 13.65L14.4002 8.40002C14.6252 8.17502 14.6252 7.82503 14.4002 7.60002Z"
+                    fill="white"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- My Account -->
+            <div x-show="isLogin">
+              <!-- Profile dropdown -->
+              <div @click="showProfileDropdown = !showProfileDropdown"
+                class="avatar relative flex max-w-xs items-center rounded-full bg-indigo-600 text-sm text-white ring-1 ring-white/50 hover:outline-none hover:ring-2 hover:ring-white/80 hover:ring-offset-2 hover:ring-offset-indigo-600">
+                <span class="absolute -inset-1.5"></span>
+                <img class="size-8 rounded-full object-cover" :src="userInfo?.avatar" alt="Avatar">
+              </div>
+
+              <div id="profile_dropdown" :class="{'xxxxxxxxxxxxxxxx !block': showProfileDropdown}"
+                class="profile_dropdown hidden hover:block absolute right-0 z-10 mt-1 mr-3 w-48 origin-top-right rounded-md bg-blue-900/90 backdrop-blur-lg py-1 shadow-lg ring-1 ring-black/5 hover:outline-none pricing-item-border">
+                <div x-text="userInfo?.user_name" class="block px-4 py-2 text-sm text-gray-300"></div>
+                <div class="w-full h-[1px] m-2 pricing-gradient-divider"></div>
+                <div class="flex items-center justify-between px-4 py-2 text-sm text-gray-300">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block w-4">
+                      <img src="./assets/picture/gold_coins.svg" alt="">
+                    </span>
+                    <span x-text="userInfo?.credit"></span>
+                  </div>
+                  <a href="./pricing.html"
+                    class="button-gradient px-2 text-[12px] text-white rounded-full cursor-pointer">Buy</a>
+                </div>
+                <div class="w-full h-[1px] m-2 pricing-gradient-divider"></div>
+                <a href="http://aitools.leafbox.cn/library"
+                  class="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-500/20 cursor-pointer" role="menuitem">File
+                  Library</a>
+                <a href="http://aitools.leafbox.cn/history"
+                  class="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-500/20 cursor-pointer"
+                  role="menuitem">Credit History</a>
+                <a href="http://aitools.leafbox.cn/settings"
+                  class="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-500/20 cursor-pointer"
+                  role="menuitem">Settings</a>
+                <div class="w-full h-[1px] m-2 pricing-gradient-divider"></div>
+                <a class="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-500/20 cursor-pointer" @click="
+                localStorage.clear()
+                isLogin = false;
+              ">Sign out</a>
+                <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                  <span class="absolute left-0 bottom-0 -z-1 w-full">
+                    <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                  </span>
+                  <span class="absolute left-0 top-0 -z-1 w-full">
+                    <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <nav
+          class="menu w-full lg:w-3/4 h-[90px]  lg:flex items-center justify-between bg-dark shadow-lgrelative !h-auto max-h-[60vh] overflow-y-auto rounded-md mt-4 p-7.5 hidden"
+          :class="{ '!block': navigationOpen }">
+          <ul class="h-full flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-2">
+            <li class="nav__menu lg:py-7 cursor-pointer hover:text-white! hover:nav-gradient">
+              <a href="index.html" class="relative h-full text-white/80 text-md py-1.5 px-4 border border-transparent"
+                :class="{'!text-white nav-gradient active' :page === 'home'}">Home</a>
+            </li>
+            <li class="group lg:py-7 cursor-pointer hover:text-white! hover:nav-gradient" x-data="{ dropdown: false }">
+              <a href="#"
+                class="relative text-white/80 text-md py-1.5 px-4 border border-transparent flex items-center justify-between gap-3"
+                @click.prevent="dropdown = !dropdown; console.log(dropdown)"
+                :class="{ '!text-white nav-gradient active' :page === 'product' || page === 'about' || page === 'pricing' || page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }">
+                Products
+
+                <svg class="fill-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+                  <path
+                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                  </path>
+                </svg>
+              </a>
+
+              <!-- Sub Menu -->
+              <div class="dropdown lg:backdrop-blur-lg" :class="{ 'flex': dropdown, 'hidden': !dropdown }">
+                <div
+                  class="grid max-w-7xl grid-cols-1 gap-2 px-6 py-2 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-0 sm:py-5 lg:grid-cols-4 lg:gap-4 lg:px-8 xl:gap-8">
+                  <div class="group relative -mx-3 flex gap-2 rounded-lg p-3 text-sm/6 flex-col sm:p-6">
+                    <b class="font-semibold text-gray-200 pb-2 border-b border-gray-400/90">
+                      Al Video Tools
+                    </b>
+                    <ul class="mt-1 text-gray-300 leading-[2.5em]">
+                      <li class="hover:text-gray-200"><a href="./product.html">AI Graphic Design</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Text to VideoL</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al lmage to videoIFree</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">AI URL to Video</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Video Enhancer</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Dance Photo</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Video DubbingFree</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Santa video</a></li>
+                    </ul>
+                  </div>
+                  <div class="group relative -mx-3 flex gap-2 rounded-lg p-3 text-sm/6 flex-col sm:p-6">
+                    <b class="font-semibold text-gray-200 pb-2 border-b border-gray-400/90">
+                      Al Photo Tools
+                    </b>
+                    <ul class="mt-1 text-gray-300 leading-[2.5em]">
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Talking Photo</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Text to VideoL</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al lmage to videoIFree</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">AI URL to Video</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Video Enhancer</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Dance Photo</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Video DubbingFree</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Santa video</a></li>
+                    </ul>
+                  </div>
+                  <div class="group relative -mx-3 flex gap-2 rounded-lg p-3 text-sm/6 flex-col sm:p-6">
+                    <b class="font-semibold text-gray-200 pb-2 border-b border-gray-400/90">
+                      Al Voice Tools
+                    </b>
+                    <ul class="mt-1 text-gray-300 leading-[2.5em]">
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Talking Photo</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Text to VideoL</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al lmage to videoIFree</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">AI URL to Video</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Video Enhancer</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Dance Photo</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Santa video</a></li>
+                    </ul>
+                  </div>
+                  <div class="group relative -mx-3 flex gap-2 rounded-lg p-3 text-sm/6 flex-col sm:p-6">
+                    <b class="font-semibold text-gray-200 pb-2 border-b border-gray-400/90">
+                      Integrations
+                    </b>
+                    <ul class="mt-1 text-gray-300 leading-[2.5em]">
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Talking Photo</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Text to VideoL</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al lmage to videoIFree</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Video Enhancer</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Dance Photo</a></li>
+                      <li class="hover:text-gray-200"><a href="./product.html">Al Santa video</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__menu lg:py-7 cursor-pointer hover:text-white hover:nav-gradient">
+              <a href="pricing.html" class="relative text-white/80 text-md py-1.5 px-4 border border-transparent"
+                :class="{'!text-white nav-gradient active' :page === 'pricing'}">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- PC -->
+      <section class="max-lg:hidden w-full flex items-center justify-between">
+
+        <!-- Logo -->
+        <a class="mr-20 text-white text-4xl font-extrabold" href="index.html">
+          <img src="./assets/picture/logo.svg" alt="VidPix" srcset="" class="h-[25px] lg:h-[30px]">
+        </a>
+
+        <!-- Menu -->
+        <div class="menu h-[90px]  lg:flex items-center justify-between flex-grow-1 hidden"
+          :class="{ ' bg-dark shadow-lgrelative !h-auto max-h-[60vh] overflow-y-auto rounded-md mt-4 p-7.5 !block': navigationOpen }">
+          <nav class="h-full">
+            <ul class="h-full flex lg:items-center flex-col lg:flex-row gap-5 lg:gap-2">
+              <li class="nav__menu lg:py-7 cursor-pointer hover:text-white! hover:nav-gradient">
+                <a href="index.html" class="relative h-full text-white/80 text-md py-1.5 px-4 border border-transparent"
+                  :class="{'!text-white nav-gradient active' :page === 'home'}">Home</a>
+              </li>
+              <li class="group lg:py-7 cursor-pointer hover:text-white! hover:nav-gradient"
+                x-data="{ dropdown: false }">
+                <a href="#"
+                  class="relative text-white/80 text-md py-1.5 px-4 border border-transparent flex items-center justify-between gap-3"
+                  @click.prevent="dropdown = !dropdown; console.log(dropdown)"
+                  :class="{ '!text-white nav-gradient active' :page === 'product' || page === 'about' || page === 'pricing' || page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }">
+                  Products
+
+                  <svg class="fill-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+                    <path
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                    </path>
+                  </svg>
+                </a>
+
+                <!-- Sub Menu -->
+                <div class="dropdown lg:backdrop-blur-lg" :class="{ 'flex': dropdown, 'hidden': !dropdown }">
+                  <div
+                    class="grid max-w-7xl grid-cols-1 gap-2 px-6 py-2 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-0 sm:py-5 lg:grid-cols-4 lg:gap-4 lg:px-8 xl:gap-8">
+                    <div class="group relative -mx-3 flex gap-2 rounded-lg p-3 text-sm/6 flex-col sm:p-6">
+                      <b class="font-semibold text-gray-300 pb-2 border-b border-gray-400/90">
+                        Al Video Tools
+                      </b>
+                      <ul class="mt-1 text-gray-300 leading-[2.5em]">
+                        <li class="hover:text-gray-200"><a href="./product.html">AI Graphic Design</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Text to VideoL</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al lmage to videoIFree</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">AI URL to Video</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Video Enhancer</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Dance Photo</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Video DubbingFree</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Santa video</a></li>
+                      </ul>
+                    </div>
+                    <div class="group relative -mx-3 flex gap-2 rounded-lg p-3 text-sm/6 flex-col sm:p-6">
+                      <b class="font-semibold text-gray-300 pb-2 border-b border-gray-400/90">
+                        Al Photo Tools
+                      </b>
+                      <ul class="mt-1 text-gray-300 leading-[2.5em]">
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Talking Photo</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Text to VideoL</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al lmage to videoIFree</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">AI URL to Video</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Video Enhancer</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Dance Photo</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Video DubbingFree</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Santa video</a></li>
+                      </ul>
+                    </div>
+                    <div class="group relative -mx-3 flex gap-2 rounded-lg p-3 text-sm/6 flex-col sm:p-6">
+                      <b class="font-semibold text-gray-300 pb-2 border-b border-gray-400/90">
+                        Al Voice Tools
+                      </b>
+                      <ul class="mt-1 text-gray-300 leading-[2.5em]">
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Talking Photo</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Text to VideoL</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al lmage to videoIFree</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">AI URL to Video</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Video Enhancer</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Dance Photo</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Santa video</a></li>
+                      </ul>
+                    </div>
+                    <div class="group relative -mx-3 flex gap-2 rounded-lg p-3 text-sm/6 flex-col sm:p-6">
+                      <b class="font-semibold text-gray-300 pb-2 border-b border-gray-400/90">
+                        Integrations
+                      </b>
+                      <ul class="mt-1 text-gray-300 leading-[2.5em]">
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Talking Photo</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Text to VideoL</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al lmage to videoIFree</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Video Enhancer</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Dance Photo</a></li>
+                        <li class="hover:text-gray-200"><a href="./product.html">Al Santa video</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__menu lg:py-7 cursor-pointer hover:text-white hover:nav-gradient">
+                <a href="pricing.html" class="relative text-white/80 text-md py-1.5 px-4 border border-transparent"
+                  :class="{'!text-white nav-gradient active' :page === 'pricing'}">Pricing</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Right -->
+        <div class="flex items-center">
+          <!-- Sign in / Sign up -->
+          <div x-show="!isLogin" class="flex items-center justify-center gap-4 mt-7 lg:mt-0">
+            <a href="signIn.html" class="text-white text-sm hover:text-opacity-75">Sign in</a>
+
+            <a href="signUp.html"
+              class="button-gradient relative rounded-full text-white text-sm flex items-center gap-1.5 py-2 px-4.5 ">
+              Sign up
+
+              <svg class="mt-0.5" width="16" height="16" viewbox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.4002 7.60002L9.2252 2.35002C9.0002 2.12502 8.6502 2.12502 8.4252 2.35002C8.2002 2.57502 8.2002 2.92502 8.4252 3.15002L12.6252 7.42502H2.0002C1.7002 7.42502 1.4502 7.67502 1.4502 7.97502C1.4502 8.27502 1.7002 8.55003 2.0002 8.55003H12.6752L8.4252 12.875C8.2002 13.1 8.2002 13.45 8.4252 13.675C8.5252 13.775 8.6752 13.825 8.8252 13.825C8.9752 13.825 9.1252 13.775 9.2252 13.65L14.4002 8.40002C14.6252 8.17502 14.6252 7.82503 14.4002 7.60002Z"
+                  fill="white"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- My Account -->
+          <div x-show="isLogin">
+            <!-- Profile dropdown -->
+            <div @click="showProfileDropdown = !showProfileDropdown"
+              class="avatar relative flex max-w-xs items-center rounded-full bg-indigo-600 text-sm text-white ring-1 ring-white/50 hover:outline-none hover:ring-2 hover:ring-white/80 hover:ring-offset-2 hover:ring-offset-indigo-600">
+              <span class="absolute -inset-1.5"></span>
+              <img class="size-8 rounded-full object-cover" :src="userInfo?.avatar" alt="Avatar">
+            </div>
+
+            <div id="profile_dropdown" :class="{'xxxxxxxxxxxxxxxx !block': showProfileDropdown}"
+              class="profile_dropdown hidden hover:block absolute right-0 z-10 mt-1 mr-3 w-48 origin-top-right rounded-md bg-blue-900/90 backdrop-blur-lg py-1 shadow-lg ring-1 ring-black/5 hover:outline-none pricing-item-border">
+              <div x-text="userInfo?.user_name" class="block px-4 py-2 text-sm text-gray-300"></div>
+              <div class="w-full h-[1px] m-2 pricing-gradient-divider"></div>
+              <div class="flex items-center justify-between px-4 py-2 text-sm text-gray-300">
+                <div class="flex items-center gap-2">
+                  <span class="inline-block w-4">
+                    <img src="./assets/picture/gold_coins.svg" alt="">
+                  </span>
+                  <span x-text="userInfo?.credit"></span>
+                </div>
+                <a href="./pricing.html"
+                  class="button-gradient px-2 text-[12px] text-white rounded-full cursor-pointer">Buy</a>
+              </div>
+              <div class="w-full h-[1px] m-2 pricing-gradient-divider"></div>
+              <a href="http://aitools.leafbox.cn/library"
+                class="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-500/20 cursor-pointer" role="menuitem">File
+                Library</a>
+              <a href="http://aitools.leafbox.cn/history"
+                class="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-500/20 cursor-pointer" role="menuitem">Credit
+                History</a>
+              <a href="http://aitools.leafbox.cn/settings"
+                class="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-500/20 cursor-pointer"
+                role="menuitem">Settings</a>
+              <div class="w-full h-[1px] m-2 pricing-gradient-divider"></div>
+              <a class="block px-4 py-2 text-sm text-gray-300 hover:bg-blue-500/20 cursor-pointer" @click="
+                localStorage.clear()
+                isLogin = false;
+              ">Sign out</a>
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                <span class="absolute left-0 bottom-0 -z-1 w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                </span>
+                <span class="absolute left-0 top-0 -z-1 w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- ===== Header End ===== -->
+
+  <main>
+    <!-- ===== Pricing Section Start ===== -->
+    <section>
+      <div class="max-w-[1170px] mx-auto mt-40 px-4 sm:px-8 xl:px-0">
+        <!-- section title -->
+        <div class="wow fadeInUp mb-17.5 text-center">
+          <span
+            class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
+
+            <span class="hero-subtitle-text"> Pricing </span>
+          </span>
+          <h2 class="text-white mb-4.5 text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
+            Our Pricing Plan
+          </h2>
+          <p class="max-w-[714px] mx-auto font-medium">
+            Choose an affordable plan that's packed with the best features for engaging your audience, creating customer
+            loyalty, and driving sales.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7.5 mt-30 max-sm:mt-20">
+          <!-- Pricing item 1 -->
+          <div class="pricing-item wow fadeInUp relative z-20 max-sm:mb-20">
+            <div
+              class="pricing-item-inner relative pt-12.5 pb-10 px-10 overflow-hidden pricing-item-border bg-dark rounded-3xl hover-shadow">
+              <div class="flex items-center justify-between mb-5.5">
+                <h3 class="font-semibold text-heading-6 text-white">Starter</h3>
+                <p class="text-2xl text-white">$10</p>
+              </div>
+
+              <div class=" flex items-baseline justify-center gap-3.5">
+                <h2 class="font-bold text-5xl pricing-gradient-text">
+                  100
+                </h2>
+                <p class="font-medium text-2xl">
+                  Credits
+                </p>
+              </div>
+
+              <div class="my-10 w-full h-[1px] pricing-gradient-divider"></div>
+
+              <a href="index1.html#"
+                class="my-11 flex items-center justify-center gap-1.5 font-medium text-white p-3 rounded-full transition-all ease-in-out duration-300 relative button-gradient hover:shadow-button">
+                Buy Now
+                <svg width="17" height="16" viewbox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.8992 7.5999L9.72422 2.3499C9.49922 2.1249 9.14922 2.1249 8.92422 2.3499C8.69922 2.5749 8.69922 2.9249 8.92422 3.1499L13.1242 7.4249H2.49922C2.19922 7.4249 1.94922 7.6749 1.94922 7.9749C1.94922 8.2749 2.19922 8.5499 2.49922 8.5499H13.1742L8.92422 12.8749C8.69922 13.0999 8.69922 13.4499 8.92422 13.6749C9.02422 13.7749 9.17422 13.8249 9.32422 13.8249C9.47422 13.8249 9.62422 13.7749 9.72422 13.6499L14.8992 8.3999C15.1242 8.1749 15.1242 7.8249 14.8992 7.5999Z"
+                    fill="white"></path>
+                </svg>
+              </a>
+
+              <ul class="flex flex-col gap-4">
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Subscription with levels</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Advanced features included</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Shared workspaces & tools</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Premium versions functionality</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Customizing the outputs</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Priority customer support</span>
+                </li>
+              </ul>
+
+              <!-- bg shapes -->
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                <span class="absolute left-0 bottom-0 -z-1 w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                </span>
+                <span class="absolute left-0 top-0 -z-1 w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing item 2 -->
+          <div class="popular pricing-item wow fadeInUp relative z-20 off-mark">
+            <div
+              class="pricing-item-inner relative pt-12.5 pb-10 px-10 overflow-hidden pricing-item-border bg-dark rounded-3xl hover-shadow">
+              <div class="flex items-center justify-between mb-5.5">
+                <h3 class="font-semibold text-heading-6 text-white">Medium</h3>
+                <p class="text-2xl text-white">
+                  <span>$100</span>
+                  <small class="text-[14px] text-gray-500 overlength-text">$200</small>
+                </p>
+              </div>
+
+              <div class=" flex items-baseline justify-center gap-3.5">
+                <h2 class="font-bold text-5xl pricing-gradient-text">
+                  1000
+                </h2>
+                <p class="font-medium text-2xl">
+                  Credits
+                </p>
+              </div>
+
+              <div class="my-10 w-full h-[1px] pricing-gradient-divider"></div>
+
+              <a href="index1.html#"
+                class="my-11 flex items-center justify-center gap-1.5 font-medium text-white p-3 rounded-full transition-all ease-in-out duration-300 relative button-gradient hover:shadow-button">
+                Buy Now
+                <svg width="17" height="16" viewbox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.8992 7.5999L9.72422 2.3499C9.49922 2.1249 9.14922 2.1249 8.92422 2.3499C8.69922 2.5749 8.69922 2.9249 8.92422 3.1499L13.1242 7.4249H2.49922C2.19922 7.4249 1.94922 7.6749 1.94922 7.9749C1.94922 8.2749 2.19922 8.5499 2.49922 8.5499H13.1742L8.92422 12.8749C8.69922 13.0999 8.69922 13.4499 8.92422 13.6749C9.02422 13.7749 9.17422 13.8249 9.32422 13.8249C9.47422 13.8249 9.62422 13.7749 9.72422 13.6499L14.8992 8.3999C15.1242 8.1749 15.1242 7.8249 14.8992 7.5999Z"
+                    fill="white"></path>
+                </svg>
+              </a>
+
+              <ul class="flex flex-col gap-4">
+                <li class="flex items-center gap-5">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Subscription with levels</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Advanced features included</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Shared workspaces & tools</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Premium versions functionality</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Customizing the outputs</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Priority customer support</span>
+                </li>
+              </ul>
+
+              <!-- bg shapes -->
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                <span class="absolute left-0 bottom-0 -z-1 w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                </span>
+                <span class="absolute left-0 top-0 -z-1 w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing item 3 -->
+          <div class="pricing-item wow fadeInUp relative z-20 max-sm:mt-20 off-mark" style="--discount-value: '60%';">
+            <div
+              class="pricing-item-inner relative pt-12.5 pb-10 px-10 overflow-hidden pricing-item-border bg-dark rounded-3xl hover-shadow">
+
+              <div class="flex items-center justify-between mb-5.5">
+                <h3 class="font-semibold text-heading-6 text-white">Business</h3>
+                <p class="text-2xl text-white">
+                  <span>$1000</span>
+                  <small class="text-[14px] text-gray-500 overlength-text">$2500</small>
+                </p>
+              </div>
+
+              <div class=" flex items-baseline justify-center gap-3.5">
+                <h2 class="font-bold text-5xl pricing-gradient-text">
+                  10000
+                </h2>
+                <p class="font-medium text-2xl">
+                  Credits
+                </p>
+              </div>
+
+              <div class="my-10 w-full h-[1px] pricing-gradient-divider"></div>
+
+              <a href="index1.html#"
+                class="my-11 flex items-center justify-center gap-1.5 font-medium text-white p-3 rounded-full transition-all ease-in-out duration-300 relative button-gradient hover:shadow-button">
+                Buy Now
+                <svg width="17" height="16" viewbox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.8992 7.5999L9.72422 2.3499C9.49922 2.1249 9.14922 2.1249 8.92422 2.3499C8.69922 2.5749 8.69922 2.9249 8.92422 3.1499L13.1242 7.4249H2.49922C2.19922 7.4249 1.94922 7.6749 1.94922 7.9749C1.94922 8.2749 2.19922 8.5499 2.49922 8.5499H13.1742L8.92422 12.8749C8.69922 13.0999 8.69922 13.4499 8.92422 13.6749C9.02422 13.7749 9.17422 13.8249 9.32422 13.8249C9.47422 13.8249 9.62422 13.7749 9.72422 13.6499L14.8992 8.3999C15.1242 8.1749 15.1242 7.8249 14.8992 7.5999Z"
+                    fill="white"></path>
+                </svg>
+              </a>
+
+              <ul class="flex flex-col gap-4">
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Subscription with levels</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Advanced features included</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Shared workspaces & tools</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Premium versions functionality</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Customizing the outputs</span>
+                </li>
+                <li class="flex items-center gap-5">
+                  <!-- <img src="./assets/picture/pricing-icon-04.svg" alt="icon"> -->
+                  <img alt="" src="./assets/picture/icon-right.svg" class="icon-list">
+                  <span class="font-medium">Priority customer support</span>
+                </li>
+              </ul>
+
+              <!-- bg shapes -->
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                <span class="absolute left-0 bottom-0 -z-1 w-full">
+                  <img src="./assets/picture/blur-16.svg" alt="blur" class="max-w-none w-full">
+                </span>
+                <span class="absolute left-0 top-0 -z-1 w-full">
+                  <img src="./assets/picture/blur-17.svg" alt="blur" class="max-w-none w-full">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Pricing Section End ===== -->
+
+    <!-- ===== FAQ Section Start ===== -->
+    <section>
+      <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+        <!-- Section Title -->
+        <div class="wow animate__animated animate__fadeInUp text-center">
+          <span
+            class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
+
+            <span class="hero-subtitle-text"> FQA </span>
+          </span>
+          <!-- <h2 class="text-4xl text-white mb-4.5 text-2xl  font-semibold sm:text-4xl xl:text-heading-2">
+            Frequently asked questions
+          </h2> -->
+          <h2 class="text-4xl font-semibold text-center tracking-tight text-white sm:text-5xl">Frequently asked
+            questions
+        </div>
+        <!-- content -->
+        </h2>
+        <dl class="mt-20 divide-y divide-gray-400/20">
+          <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
+            <dt class="text-base/7 font-semibold text-gray-300 lg:col-span-5">What&#039;s the best thing about
+              Switzerland?</dt>
+            <dd class="mt-4 lg:col-span-7 lg:mt-0">
+              <p class="text-base/7 text-gray-400">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+            </dd>
+          </div>
+          <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
+            <dt class="text-base/7 font-semibold text-gray-300 lg:col-span-5">What&#039;s the best thing about
+              Switzerland?</dt>
+            <dd class="mt-4 lg:col-span-7 lg:mt-0">
+              <p class="text-base/7 text-gray-400">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+            </dd>
+          </div>
+          <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
+            <dt class="text-base/7 font-semibold text-gray-300 lg:col-span-5">What&#039;s the best thing about
+              Switzerland?</dt>
+            <dd class="mt-4 lg:col-span-7 lg:mt-0">
+              <p class="text-base/7 text-gray-400">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+            </dd>
+          </div>
+          <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
+            <dt class="text-base/7 font-semibold text-gray-300 lg:col-span-5">What&#039;s the best thing about
+              Switzerland?</dt>
+            <dd class="mt-4 lg:col-span-7 lg:mt-0">
+              <p class="text-base/7 text-gray-400">I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+            </dd>
+          </div>
+          <!-- More questions... -->
+        </dl>
+      </div>
+    </section>
+    <!-- ===== FAQ Section End ===== -->
+
+    <!-- ===== FAQ Section Start ===== -->
+    <section class="hidden relative overflow-hidden pb-17.5 lg:pb-22.5 xl:pb-27.5 pt-20 lg:pt-25">
+      <!-- divider -->
+      <div class="about-divider-gradient max-w-[1170px] w-full h-[1px] absolute top-0 left-1/2 -translate-x-1/2">
+      </div>
+
+      <div class="max-w-[770px] mx-auto px-4 sm:px-8 xl:px-0">
+        <!-- section title -->
+        <div class="wow fadeInUp mb-20 text-center">
+          <span
+            class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
+            <img src="./assets/picture/icon-title.svg" alt="icon">
+
+            <span class="hero-subtitle-text">
+              Questions About our AI Tool?
+            </span>
+          </span>
+          <h2 class="text-white mb-4.5 text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
+            Frequently Asked Questions
+          </h2>
+          <p class="max-w-[714px] mx-auto font-medium">
+            Our vidpix is designed to empower you with exceptional
+            image capabilities, making the image process more efficient,
+            accurate, and enjoyable.
+          </p>
+        </div>
+
+        <div class="wow fadeInUp">
+          <div x-data="{selected:0}">
+            <!-- faq item -->
+            <div class="flex flex-col border-b border-white/[0.15]">
+              <h4 @click="selected !== 0 ? selected = 0 : selected = null"
+                class="cursor-pointer flex justify-between items-center font-semibold text-[22px] leading-[28px] py-5 lg:py-7"
+                :class="selected == 0 ? 'text-white' : ''">
+                What Is AI Tool Content Image Tool?
+                <span :class="selected == 0 ? 'hidden' : 'block'">
+                  <svg class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.5 11.1752H12.8625V1.5002C12.8625 1.0502 12.4875 0.637695 12 0.637695C11.55 0.637695 11.1375 1.0127 11.1375 1.5002V11.1752H1.50001C1.05001 11.1752 0.637512 11.5502 0.637512 12.0377C0.637512 12.4877 1.01251 12.9002 1.50001 12.9002H11.175V22.5002C11.175 22.9502 11.55 23.3627 12.0375 23.3627C12.4875 23.3627 12.9 22.9877 12.9 22.5002V12.8627H22.5C22.95 12.8627 23.3625 12.4877 23.3625 12.0002C23.3625 11.5502 22.95 11.1752 22.5 11.1752Z"
+                      fill=""></path>
+                  </svg>
+                </span>
+
+                <span :class="selected == 0 ? 'block' : 'hidden'">
+                  <svg width="22" height="2" viewbox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.125 1.86263H0.875012C0.425012 1.86263 0.0125122 1.48763 0.0125122 1.00013C0.0125122 0.550134 0.387512 0.137634 0.875012 0.137634H21.125C21.575 0.137634 21.9875 0.512634 21.9875 1.00013C21.9875 1.45013 21.575 1.86263 21.125 1.86263Z"
+                      fill="white"></path>
+                  </svg>
+                </span>
+              </h4>
+              <p x-show="selected == 0" class="font-medium pb-7">
+                Our AI Image tool is designed to empower you with
+                exceptional Image capabilities, making the Image process
+                more efficient, accurate, and enjoyable.
+              </p>
+            </div>
+
+            <!-- faq item -->
+            <div class="flex flex-col border-b border-white/[0.15]">
+              <h4 @click="selected !== 1 ? selected = 1 : selected = null"
+                class="cursor-pointer flex justify-between items-center font-semibold text-[22px] leading-[28px] py-5 lg:py-7"
+                :class="selected == 1 ? 'text-white' : ''">
+                Is there a limit on how much content I can generate?
+                <span :class="selected == 1 ? 'hidden' : 'block'">
+                  <svg class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.5 11.1752H12.8625V1.5002C12.8625 1.0502 12.4875 0.637695 12 0.637695C11.55 0.637695 11.1375 1.0127 11.1375 1.5002V11.1752H1.50001C1.05001 11.1752 0.637512 11.5502 0.637512 12.0377C0.637512 12.4877 1.01251 12.9002 1.50001 12.9002H11.175V22.5002C11.175 22.9502 11.55 23.3627 12.0375 23.3627C12.4875 23.3627 12.9 22.9877 12.9 22.5002V12.8627H22.5C22.95 12.8627 23.3625 12.4877 23.3625 12.0002C23.3625 11.5502 22.95 11.1752 22.5 11.1752Z"
+                      fill=""></path>
+                  </svg>
+                </span>
+
+                <span :class="selected == 1 ? 'block' : 'hidden'">
+                  <svg width="22" height="2" viewbox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.125 1.86263H0.875012C0.425012 1.86263 0.0125122 1.48763 0.0125122 1.00013C0.0125122 0.550134 0.387512 0.137634 0.875012 0.137634H21.125C21.575 0.137634 21.9875 0.512634 21.9875 1.00013C21.9875 1.45013 21.575 1.86263 21.125 1.86263Z"
+                      fill="white"></path>
+                  </svg>
+                </span>
+              </h4>
+              <p x-show="selected == 1" class="font-medium pb-7">
+                Our AI Image tool is designed to empower you with
+                exceptional Image capabilities, making the Image process
+                more efficient, accurate, and enjoyable.
+              </p>
+            </div>
+
+            <!-- faq item -->
+            <div class="flex flex-col border-b border-white/[0.15]">
+              <h4 @click="selected !== 2 ? selected = 2 : selected = null"
+                class="cursor-pointer flex justify-between items-center font-semibold text-[22px] leading-[28px] py-5 lg:py-7"
+                :class="selected == 2 ? 'text-white' : ''">
+                Is it helpful for Digital Marketer or Content Writer?
+                <span :class="selected == 2 ? 'hidden' : 'block'">
+                  <svg class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.5 11.1752H12.8625V1.5002C12.8625 1.0502 12.4875 0.637695 12 0.637695C11.55 0.637695 11.1375 1.0127 11.1375 1.5002V11.1752H1.50001C1.05001 11.1752 0.637512 11.5502 0.637512 12.0377C0.637512 12.4877 1.01251 12.9002 1.50001 12.9002H11.175V22.5002C11.175 22.9502 11.55 23.3627 12.0375 23.3627C12.4875 23.3627 12.9 22.9877 12.9 22.5002V12.8627H22.5C22.95 12.8627 23.3625 12.4877 23.3625 12.0002C23.3625 11.5502 22.95 11.1752 22.5 11.1752Z"
+                      fill=""></path>
+                  </svg>
+                </span>
+
+                <span :class="selected == 2 ? 'block' : 'hidden'">
+                  <svg width="22" height="2" viewbox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.125 1.86263H0.875012C0.425012 1.86263 0.0125122 1.48763 0.0125122 1.00013C0.0125122 0.550134 0.387512 0.137634 0.875012 0.137634H21.125C21.575 0.137634 21.9875 0.512634 21.9875 1.00013C21.9875 1.45013 21.575 1.86263 21.125 1.86263Z"
+                      fill="white"></path>
+                  </svg>
+                </span>
+              </h4>
+              <p x-show="selected == 2" class="font-medium pb-7">
+                Our AI Image tool is designed to empower you with
+                exceptional Image capabilities, making the Image process
+                more efficient, accurate, and enjoyable.
+              </p>
+            </div>
+
+            <!-- faq item -->
+            <div class="flex flex-col border-b border-white/[0.15]">
+              <h4 @click="selected !== 3 ? selected = 3 : selected = null"
+                class="cursor-pointer flex justify-between items-center font-semibold text-[22px] leading-[28px] py-5 lg:py-7"
+                :class="selected == 3 ? 'text-white' : ''">
+                What Languages does it supports?
+                <span :class="selected == 3 ? 'hidden' : 'block'">
+                  <svg class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.5 11.1752H12.8625V1.5002C12.8625 1.0502 12.4875 0.637695 12 0.637695C11.55 0.637695 11.1375 1.0127 11.1375 1.5002V11.1752H1.50001C1.05001 11.1752 0.637512 11.5502 0.637512 12.0377C0.637512 12.4877 1.01251 12.9002 1.50001 12.9002H11.175V22.5002C11.175 22.9502 11.55 23.3627 12.0375 23.3627C12.4875 23.3627 12.9 22.9877 12.9 22.5002V12.8627H22.5C22.95 12.8627 23.3625 12.4877 23.3625 12.0002C23.3625 11.5502 22.95 11.1752 22.5 11.1752Z"
+                      fill=""></path>
+                  </svg>
+                </span>
+
+                <span :class="selected == 3 ? 'block' : 'hidden'">
+                  <svg width="22" height="2" viewbox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.125 1.86263H0.875012C0.425012 1.86263 0.0125122 1.48763 0.0125122 1.00013C0.0125122 0.550134 0.387512 0.137634 0.875012 0.137634H21.125C21.575 0.137634 21.9875 0.512634 21.9875 1.00013C21.9875 1.45013 21.575 1.86263 21.125 1.86263Z"
+                      fill="white"></path>
+                  </svg>
+                </span>
+              </h4>
+              <p x-show="selected == 3" class="font-medium pb-7">
+                Our AI Image tool is designed to empower you with
+                exceptional Image capabilities, making the Image process
+                more efficient, accurate, and enjoyable.
+              </p>
+            </div>
+
+            <!-- faq item -->
+            <div class="flex flex-col">
+              <h4 @click="selected !== 4 ? selected = 4 : selected = null"
+                class="cursor-pointer flex justify-between items-center font-semibold text-[22px] leading-[28px] py-5 lg:py-7"
+                :class="selected == 4 ? 'text-white' : ''">
+                What is SEO Image AI and how do I use it?
+                <span :class="selected == 4 ? 'hidden' : 'block'">
+                  <svg class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.5 11.1752H12.8625V1.5002C12.8625 1.0502 12.4875 0.637695 12 0.637695C11.55 0.637695 11.1375 1.0127 11.1375 1.5002V11.1752H1.50001C1.05001 11.1752 0.637512 11.5502 0.637512 12.0377C0.637512 12.4877 1.01251 12.9002 1.50001 12.9002H11.175V22.5002C11.175 22.9502 11.55 23.3627 12.0375 23.3627C12.4875 23.3627 12.9 22.9877 12.9 22.5002V12.8627H22.5C22.95 12.8627 23.3625 12.4877 23.3625 12.0002C23.3625 11.5502 22.95 11.1752 22.5 11.1752Z"
+                      fill=""></path>
+                  </svg>
+                </span>
+
+                <span :class="selected == 4 ? 'block' : 'hidden'">
+                  <svg width="22" height="2" viewbox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.125 1.86263H0.875012C0.425012 1.86263 0.0125122 1.48763 0.0125122 1.00013C0.0125122 0.550134 0.387512 0.137634 0.875012 0.137634H21.125C21.575 0.137634 21.9875 0.512634 21.9875 1.00013C21.9875 1.45013 21.575 1.86263 21.125 1.86263Z"
+                      fill="white"></path>
+                  </svg>
+                </span>
+              </h4>
+              <p x-show="selected == 4" class="font-medium pb-7">
+                Our AI Image tool is designed to empower you with
+                exceptional Image capabilities, making the Image process
+                more efficient, accurate, and enjoyable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FAQ Section End ===== -->
+  </main>
+
+  <!-- ====== Footer Section Start -->
+  <footer class="relative z-10 pb-17.5 lg:pb-22.5 xl:pb-27.5">
+    <!-- bg shapes -->
+    <div class="absolute bottom-0 left-0 w-full flex flex-col gap-3 -z-1 opacity-50">
+      <div class="w-full h-[1.24px] footer-bg-gradient"></div>
+      <div class="w-full h-[2.47px] footer-bg-gradient"></div>
+      <div class="w-full h-[3.71px] footer-bg-gradient"></div>
+      <div class="w-full h-[4.99px] footer-bg-gradient"></div>
+      <div class="w-full h-[6.19px] footer-bg-gradient"></div>
+      <div class="w-full h-[7.42px] footer-bg-gradient"></div>
+      <div class="w-full h-[8.66px] footer-bg-gradient"></div>
+      <div class="w-full h-[9.90px] footer-bg-gradient"></div>
+      <div class="w-full h-[13px] footer-bg-gradient"></div>
+    </div>
+
+    <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0 relative pt-17.5">
+      <div class="w-full h-[1px] footer-divider-gradient absolute top-0 left-0"></div>
+
+      <div class="flex flex-wrap justify-between">
+        <div class="mb-10 max-w-[571px] w-full">
+          <a class="mb-8.5 inline-block text-white text-4xl font-extrabold" href="index.html">
+            <img src="./assets/picture/logo.svg" alt="VidPix" srcset="" class="h-[35px]">
+          </a>
+
+          <p class="mb-12 xl:w-4/5">
+            The AI image generation tool is designed to empower you with exceptional creative capabilities, bringing
+            your ideas to life with ease and precision.
+          </p>
+
+          <div class="flex items-center gap-5">
+            <a href="#" class="hover:text-white ease-in duration-300">
+              <svg class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13 21.9506C18.0533 21.4489 22 17.1853 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 16.8379 5.43552 20.8734 10 21.8V16H7V13H10V9.79586C10 7.47449 11.9695 5.64064 14.285 5.80603L17 5.99996V8.99996H15C13.8954 8.99996 13 9.89539 13 11V13H17L16 16H13V21.9506Z"
+                  fill=""></path>
+              </svg>
+            </a>
+
+            <a href="#" class="hover:text-white ease-in duration-300">
+              <svg class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.6125 21.5251C16.4625 21.5251 21.2625 14.2126 21.2625 7.87509C21.2625 7.72509 21.2625 7.46259 21.225 7.23759C22.1625 6.56259 22.9875 5.70009 23.625 4.76259C22.725 5.17509 21.825 5.40009 20.8875 5.51259C21.9 4.91259 22.65 3.97509 22.9875 2.8501C22.05 3.3751 21.075 3.78759 19.9125 4.01259C19.0125 3.0751 17.8125 2.4751 16.425 2.4751C13.7625 2.4751 11.5875 4.65009 11.5875 7.31259C11.5875 7.68759 11.625 8.06259 11.7 8.43759C7.8375 8.17509 4.3125 6.26259 1.9125 3.3751C1.5 4.12509 1.275 4.91259 1.275 5.77509C1.275 7.46259 2.1375 8.88759 3.45 9.75009C2.6625 9.71259 1.9125 9.48759 1.275 9.15009C1.275 9.18759 1.275 9.18759 1.275 9.18759C1.275 11.4751 2.925 13.4626 5.1 13.9126C4.6875 14.0251 4.2375 14.0626 3.9 14.0626C3.6 14.0626 3.2625 14.0251 3 13.9501C3.6375 15.8626 5.4 17.2501 7.5 17.2876C5.85 18.5626 3.7875 19.3501 1.575 19.3501C1.125 19.4251 0.75 19.3501 0.375 19.3126C2.4 20.7376 4.9125 21.5251 7.6125 21.5251Z"
+                  fill=""></path>
+              </svg>
+            </a>
+
+            <a href="#" class="hover:text-white ease-in duration-300">
+              <svg class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_368_11839)">
+                  <path
+                    d="M12 0.674805C5.625 0.674805 0.375 5.8498 0.375 12.2998C0.375 17.3998 3.7125 21.7498 8.3625 23.3248C8.9625 23.4373 9.15 23.0623 9.15 22.7998C9.15 22.5373 9.15 21.7873 9.1125 20.7748C5.8875 21.5248 5.2125 19.1998 5.2125 19.1998C4.6875 17.8873 3.9 17.5123 3.9 17.5123C2.85 16.7623 3.9375 16.7623 3.9375 16.7623C5.1 16.7998 5.7375 17.9623 5.7375 17.9623C6.75 19.7623 8.475 19.2373 9.1125 18.8998C9.225 18.1498 9.525 17.6248 9.8625 17.3248C7.3125 17.0623 4.575 16.0498 4.575 11.6248C4.575 10.3498 5.0625 9.3373 5.775 8.5498C5.6625 8.2873 5.25 7.0873 5.8875 5.4748C5.8875 5.4748 6.9 5.1748 9.1125 6.6748C10.05 6.4123 11.025 6.2623 12.0375 6.2623C13.05 6.2623 14.0625 6.3748 14.9625 6.6748C17.175 5.2123 18.15 5.4748 18.15 5.4748C18.7875 7.0498 18.4125 8.2873 18.2625 8.5498C19.0125 9.3373 19.4625 10.3873 19.4625 11.6248C19.4625 16.0498 16.725 17.0623 14.175 17.3248C14.5875 17.6998 14.9625 18.4498 14.9625 19.4998C14.9625 21.0748 14.925 22.3123 14.925 22.6873C14.925 22.9873 15.15 23.3248 15.7125 23.2123C20.2875 21.6748 23.625 17.3623 23.625 12.2248C23.5875 5.8498 18.375 0.674805 12 0.674805Z"
+                    fill=""></path>
+                </g>
+                <defs>
+                  <clippath id="clip0_368_11839">
+                    <rect width="24" height="24" fill="white"></rect>
+                  </clippath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+
+          <p class="font-medium mt-5.5">
+            DC Work. All rights reserved.
+          </p>
+        </div>
+
+        <div class="max-w-[571px] w-full">
+          <div class="flex flex-col sm:flex-row sm:justify-between gap-10">
+            <div>
+              <h5 class="font-semibold text-white mb-5">Products</h5>
+
+              <ul class="flex flex-col gap-3.5">
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Features</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Integrations</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Pricing</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Changelog</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Roadmap</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="font-semibold text-white mb-5">Company</h5>
+
+              <ul class="flex flex-col gap-3.5">
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Refund Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Support</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Community</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 class="font-semibold text-white mb-5">Support</h5>
+
+              <ul class="flex flex-col gap-3.5">
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Features</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Integrations</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Pricing</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Changelog</a>
+                </li>
+                <li>
+                  <a href="#" class="font-medium ease-in duration-300 hover:text-white">Roadmap</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ====== Footer Section End -->
+
+  <!-- ====== Back To Top Start ===== -->
+  <button
+    class="top-button hidden items-center justify-center w-10 h-10 rounded-full shadow-solid-5 bg-purple hover:opacity-70 fixed bottom-8 right-8 z-999  border border-blue-400 bg-white/[0.05]"
+    @click="window.scrollTo({top: 0, behavior: 'smooth'})"
+    @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false" :class="{ '!flex' : scrollTop }">
+    <svg class="fill-blue-400 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+      <path
+        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z">
+      </path>
+    </svg>
+  </button>
+  <!-- ====== Back To Top End ===== -->
+
+  <script defer src="./assets/js/alpine.min.js"></script>
+  <script defer src="./assets/js/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/wow.min.js"></script>
+  <script defer src="./assets/js/main.min.js"></script>
+</body>
+
+</html>
